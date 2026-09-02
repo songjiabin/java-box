@@ -19,10 +19,10 @@
     </properties>
 
     <dependencies>
-        <!-- Web 依赖：提供嵌入式 Tomcat、DispatcherServlet 和 Web 开发相关能力。 -->
+        <!-- Web 依赖：提供嵌入式 Tomcat、DispatcherServlet 和 Web 开发相关能力。 会帮我们自动导入 web 的所有依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>  <!-- 会帮我们自动导入 web 的所有依赖 -->
         </dependency>
 
         <!-- Lombok 编译期工具，用于生成常用 Java 样板代码。 -->
@@ -37,6 +37,20 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!--
+            Spring Boot 配置处理器：
+            为 @ConfigurationProperties 生成配置元数据，
+            便于 IDEA 提供配置项自动补全和提示。
+            optional=true 表示它只用于编译期，不会参与运行时依赖。
+            不导入也没事，但是会有一个提示。如果使用 @Value("${dog.name}") 这种方式就没必要导入
+            但是如果使用了 @ConfigurationProperties(prefix = "person") 那么建议导入
+        -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 
