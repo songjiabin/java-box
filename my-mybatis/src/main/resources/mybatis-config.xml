@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--核心配置文件-->
+<configuration>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url"
+                          value="jdbc:mysql://localhost:3306/mybatis?useSSL=true&amp;useUnicode=true&amp;characterEncoding=utf8"/>
+                <!-- 数据库用户名，通过 -Ddb.username=xxx 传入，避免把本机账号提交到仓库 -->
+                <property name="username" value="${db.username}"/>
+                <!-- 数据库密码，通过 -Ddb.password=xxx 传入，避免把本机密码提交到仓库 -->
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--每一个 Mapper.xml 都需要在 Mybatis 核心配置文件中注册！-->
+    <mappers>
+        <!--注意名字千万不要写错啦-->
+        <mapper resource="UserMapper.xml"/>
+    </mappers>
+</configuration>
