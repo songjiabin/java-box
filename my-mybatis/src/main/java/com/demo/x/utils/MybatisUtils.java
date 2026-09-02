@@ -15,7 +15,8 @@ public class MybatisUtils {
         String resource = "mybatis-config.xml";
         try {
             InputStream inputStream = Resources.getResourceAsStream(resource);
-            sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+            // 将 IntelliJ 或 Maven 传入的 JVM 系统属性交给 MyBatis，用于解析数据库连接配置中的占位符。
+            sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream, System.getProperties());
         } catch (IOException e) {
             e.printStackTrace();
         }
