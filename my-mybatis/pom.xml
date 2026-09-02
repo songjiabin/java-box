@@ -3,6 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <!-- 继承根工程的统一版本和构建配置。 -->
     <parent>
         <groupId>org.example</groupId>
         <artifactId>java-box</artifactId>
@@ -19,16 +20,19 @@
 
 
     <dependencies>
+        <!-- MyBatis 核心框架，负责 SQL 映射和数据库操作。 -->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
             <version>3.5.11</version>
         </dependency>
+        <!-- MySQL JDBC 驱动，负责连接 MySQL 数据库。 -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.30</version>
         </dependency>
+        <!-- JUnit 4 测试框架，仅在测试代码编译和运行时使用。 -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

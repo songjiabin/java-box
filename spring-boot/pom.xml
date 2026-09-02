@@ -3,6 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <!-- 继承根工程的统一版本和构建配置。 -->
     <parent>
         <groupId>org.example</groupId>
         <artifactId>java-box</artifactId>
@@ -18,16 +19,20 @@
     </properties>
 
     <dependencies>
-        <!--web 依赖：tomcat，dispatcherServlet，xml...-->
+        <!-- Web 依赖：提供嵌入式 Tomcat、DispatcherServlet 和 Web 开发相关能力。 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!-- Lombok 编译期工具，用于生成常用 Java 样板代码。 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
+        <!-- Spring Boot 测试依赖，提供测试框架和常用测试工具，仅测试阶段使用。 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -35,5 +40,22 @@
         </dependency>
     </dependencies>
 
-
+    <build>
+        <plugins>
+            <!-- Spring Boot 打包插件：将依赖和项目代码打入可执行 jar。 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+                <executions>
+                    <!-- 在 package 阶段重打包，使 JAR 能通过 java -jar 直接启动。 -->
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
