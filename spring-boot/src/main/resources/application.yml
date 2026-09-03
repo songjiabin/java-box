@@ -1,16 +1,7 @@
-server:
-  port: 8081
-
-person:
-  name: locke
-  age: 3
-  happy: false
-  birth: 2000/01/02
-  maps: { k1: v1,k2: v2 }
-  lists:
-    - code
-    - girl
-    - music
-  dog:
-    name: 旺财
-    age: 1
+spring:
+  profiles:
+    active: prod
+  thymeleaf:
+    cache: false # 关闭掉 模板引擎的缓存
+  messages:
+    basename: i18n.login

@@ -1,8 +1,10 @@
 package com.x.y.bean;
 
 
+import jakarta.validation.constraints.Email;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 
 
 import java.util.Date;
@@ -18,6 +20,7 @@ import java.util.Map;
 */
 @Component
 @ConfigurationProperties(prefix = "person")
+@Validated // 数据校验
 public class Person {
     private String name;
     private Integer age;
@@ -26,6 +29,9 @@ public class Person {
     private Map<String, Object> maps;
     private List<Object> lists;
     private Dog dog;
+
+    @Email(message = "邮箱格式错误")
+    private String email;
 
     public String getName() {
         return name;
@@ -83,8 +89,16 @@ public class Person {
         this.dog = dog;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public String toString() {
-        return "Person{" + "name='" + name + '\'' + ", age=" + age + ", happy=" + happy + ", birth=" + birth + ", maps=" + maps + ", lists=" + lists + ", dog=" + dog + '}';
+        return "Person{" + "name='" + name + '\'' + ", age=" + age + ", happy=" + happy + ", birth=" + birth + ", maps=" + maps + ", lists=" + lists + ", dog=" + dog + ", email='" + email + '\'' + '}';
     }
 }
