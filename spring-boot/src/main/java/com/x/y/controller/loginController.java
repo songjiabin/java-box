@@ -18,7 +18,7 @@ public class loginController {
         // 具体的业务,登录成功跳转到 dashboard 页面
         if (!StringUtils.isEmpty(userName) && "123456".equals(passWord)) {
             session.setAttribute("loginUser", userName);
-            return "redirect:/main.html";
+            return "redirect:/dashboard";
         } else {
             model.addAttribute("msg", "用户名或者密码错误");
             return "index";

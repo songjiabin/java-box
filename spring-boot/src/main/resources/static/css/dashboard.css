@@ -1,0 +1,116 @@
+/* 后台导航栏：使用稳定的深色背景区分系统导航与内容区域。 */
+.dashboard-navbar {
+    min-height: 56px;
+    padding: 0.75rem 1.5rem;
+    background: #243447;
+}
+
+.dashboard-navbar .navbar-brand {
+    font-weight: 600;
+}
+
+/* 左侧菜单：在桌面端固定视觉宽度，在移动端自然堆叠。 */
+.dashboard-sidebar {
+    min-height: calc(100vh - 56px);
+    padding: 1.5rem 0.75rem;
+    background: #f1f4f8;
+    border-right: 1px solid #dfe5ec;
+}
+
+.sidebar-title {
+    padding: 0 0.75rem 0.75rem;
+    color: #7a8796;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.sidebar-link {
+    display: block;
+    padding: 0.75rem;
+    margin-bottom: 0.25rem;
+    color: #526170;
+    border-radius: 4px;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+    color: #1f5fbf;
+    background: #dceaff;
+    text-decoration: none;
+}
+
+/* 主内容区域：提供适合后台页面阅读的留白和浅色背景。 */
+.dashboard-content {
+    min-height: calc(100vh - 56px);
+    padding: 2rem;
+    background: #f8fafc;
+}
+
+.page-title {
+    margin-bottom: 0.35rem;
+    color: #263238;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.page-subtitle {
+    margin-bottom: 0;
+    color: #7a8796;
+}
+
+/* 信息卡片：承载后台入口和当前状态。 */
+.dashboard-card {
+    height: 100%;
+    padding: 1.5rem;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    box-shadow: 0 4px 14px rgba(34, 52, 70, 0.05);
+}
+
+.dashboard-card h2 {
+    margin: 0.6rem 0;
+    color: #263238;
+    font-size: 1.25rem;
+}
+
+.dashboard-card p {
+    min-height: 48px;
+    color: #687586;
+}
+
+.card-label {
+    color: #3f7ee8;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.dashboard-card-muted {
+    background: #eef6f1;
+    border-color: #d4eadb;
+}
+
+.status-dot {
+    display: inline-block;
+    color: #24733c;
+    font-weight: 600;
+}
+
+@media (max-width: 767.98px) {
+    .dashboard-navbar {
+        padding: 0.75rem 1rem;
+    }
+
+    .dashboard-sidebar {
+        min-height: auto;
+        padding: 1rem 0.75rem;
+    }
+
+    .dashboard-content {
+        padding: 1.5rem 1rem;
+    }
+}
