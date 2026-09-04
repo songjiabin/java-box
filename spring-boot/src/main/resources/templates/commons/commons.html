@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<body>
+<!-- 公共侧边栏：通过 active 参数控制当前菜单高亮。 -->
+<nav th:fragment="sidebar(active)" class="col-md-3 col-lg-2 d-md-block dashboard-sidebar">
+    <div class="sidebar-title">系统菜单</div>
+    <a class="sidebar-link" th:classappend="${active == 'dashboard'} ? ' active'" th:href="@{/dashboard}">控制台</a>
+    <a class="sidebar-link" th:classappend="${active == 'list.html'} ? ' active'" th:href="@{/emps}">员工管理</a>
+    <a class="sidebar-link" th:classappend="${active == 'test'} ? ' active'" th:href="@{/test2}">模板测试</a>
+    <a class="sidebar-link" th:href="@{/index.html}">退出登录</a>
+</nav>
+</body>
+</html>

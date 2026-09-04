@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>添加员工</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{/css/dashboard.css}" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-dark dashboard-navbar">
+    <a class="navbar-brand" th:href="@{/dashboard}">员工管理系统</a>
+    <span class="navbar-text text-white">欢迎，<strong th:text="${session.loginUser}">用户</strong></span>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <!-- 复用公共侧边栏，并将员工管理菜单设置为高亮。 -->
+        <div th:replace="~{commons/commons :: sidebar(active='list.html')}"></div>
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 dashboard-content">
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+                <div>
+                    <h1 class="page-title">添加员工</h1>
+                    <p class="page-subtitle">填写员工信息后提交保存</p>
+                </div>
+                <a class="btn btn-outline-primary" th:href="@{/emps}">返回列表</a>
+            </div>
+            <form class="bg-white border rounded p-4" th:action="@{/emp}" method="post">
+                <div class="form-group">
+                    <label for="lastName">姓名</label>
+                    <input id="lastName" type="text" name="lastName" class="form-control" placeholder="请输入姓名" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">邮箱</label>
+                    <input id="email" type="email" name="email" class="form-control" placeholder="请输入邮箱" required>
+                </div>
+                <div class="form-group">
+                    <label>性别</label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input id="male" class="form-check-input" type="radio" name="gender" value="1" required>
+                            <label class="form-check-label" for="male">男</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input id="female" class="form-check-input" type="radio" name="gender" value="0">
+                            <label class="form-check-label" for="female">女</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="department">部门</label>
+                    <select id="department" class="form-control" name="department.id" required>
+                        <option value="">请选择部门</option>
+                        <option th:each="dept : ${departments}" th:text="${dept.departmentName}" th:value="${dept.id}">教学部</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="birth">出生日期</label>
+                    <input id="birth" type="text" name="birth" class="form-control" placeholder="2020/07/25 18:00:00">
+                </div>
+                <button type="submit" class="btn btn-primary">添加</button>
+                <a class="btn btn-light ml-2" th:href="@{/emps}">取消</a>
+            </form>
+        </main>
+    </div>
+</div>
+</body>
+</html>
