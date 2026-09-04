@@ -4,6 +4,7 @@ package com.x.y.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.LocaleResolver;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -14,11 +15,13 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 // @EnableWebMvc // 这玩意就是导入了一个类，DelegatingWebMvcConfiguration，从容器中获取所有的 webMvcConfig
 @Configuration
 public class MyMvcConfig implements WebMvcConfigurer {
+
+
+    // 请求来了以后应该返回哪个页面
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         // 浏览器发送 /test2，就会跳转到 test 页面
         registry.addViewController("/test2").setViewName("test");
-
 
         registry.addViewController("/").setViewName("index");
         registry.addViewController("/index.html").setViewName("index");
@@ -29,5 +32,12 @@ public class MyMvcConfig implements WebMvcConfigurer {
     @Bean
     public LocaleResolver localeResolver() {
         return new MyLocalResolver();
+    }
+
+    // 拦截器方法
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**").
+                excludePathPatterns("/index.html", "/", "/login", "/css/**", "/js/**", "/img/**");
     }
 }
