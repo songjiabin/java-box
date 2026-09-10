@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>页面不存在 - 员工管理系统</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            background: #f8fafc;
+            color: #263238;
+        }
+
+        .error-page {
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+        }
+
+        .error-panel {
+            width: 100%;
+            max-width: 560px;
+            padding: 3rem 2rem;
+            text-align: center;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            box-shadow: 0 4px 14px rgba(34, 52, 70, 0.06);
+        }
+
+        .error-code {
+            margin-bottom: 0.5rem;
+            color: #3f7ee8;
+            font-size: clamp(4rem, 16vw, 7rem);
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .error-title {
+            margin-bottom: 0.75rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .error-message {
+            margin-bottom: 2rem;
+            color: #687586;
+        }
+
+        .error-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+<main class="error-page">
+    <section class="error-panel" aria-labelledby="error-title">
+        <div class="error-code">404</div>
+        <h1 id="error-title" class="error-title">页面不存在</h1>
+        <p class="error-message">你访问的页面可能已被移动、删除，或者地址输入有误。</p>
+        <div class="error-actions">
+            <a class="btn btn-primary" th:href="@{/dashboard}">返回控制台</a>
+            <a class="btn btn-outline-primary" th:href="@{/emps}">查看员工列表</a>
+            <a class="btn btn-link" th:href="@{/index.html}">返回登录页</a>
+        </div>
+    </section>
+</main>
+</body>
+</html>

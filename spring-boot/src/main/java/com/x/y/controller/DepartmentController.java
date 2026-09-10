@@ -30,10 +30,5 @@ public class DepartmentController {
     }
 
 
-    @GetMapping("/emp")
-    public String addEmp(Employee employee) {
-        return "";
-    }
-
 
 }

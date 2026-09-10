@@ -5,3 +5,6 @@ spring:
     cache: false # 关闭掉 模板引擎的缓存
   messages:
     basename: i18n.login
+  mvc:
+    format:
+      date: yyyy-MM-dd
