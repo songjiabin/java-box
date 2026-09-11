@@ -36,6 +36,3 @@ build/
 
 ### Mac OS ###
 .DS_Store
-
-### AI 工作目录（会话记录/记忆，不属于项目源码）###
-.workbuddy-ai/

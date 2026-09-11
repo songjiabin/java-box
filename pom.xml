@@ -13,6 +13,7 @@
         <module>my-mybatis</module>
         <module>spring</module>
         <module>spring-boot</module>
+        <module>jdbc</module>
     </modules>
 
     <properties>
@@ -35,5 +36,31 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <plugins>
+            <!--
+                开启 -parameters 编译参数，把方法参数名保留到 class 文件的 MethodParameters 属性里。
+
+                为什么必须加：Spring MVC 的 @PathVariable / @RequestParam 在不写名字时
+                （例如 @PathVariable Integer id）需要靠反射拿到参数名去和 {id} 占位符匹配。
+                Spring Framework 6.1 起已经移除了从局部变量表猜测参数名的兜底方案，
+                所以没有 -parameters 就会在运行期直接报 500：
+                "Name for argument of type [java.lang.Integer] not specified ..."
+
+                注意：如果父工程继承的是 spring-boot-starter-parent，它已经默认帮你开了；
+                本工程用的是自定义父 pom，所以要自己配。
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <!-- 本工程没有继承 spring-boot-starter-parent，插件版本不会被自动管理，必须显式指定 -->
+                <version>3.13.0</version>
+                <configuration>
+                    <parameters>true</parameters>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
