@@ -1,0 +1,46 @@
+# Spring Boot 的全局配置根节点。
+spring:
+  # 数据源配置，用于创建数据库连接池并连接 MySQL。
+  datasource:
+    # 连接 MySQL 数据库时使用的用户名。
+    username: root
+    # 连接 MySQL 数据库时使用的密码；正式环境建议通过环境变量或配置中心注入。
+    password: wssjb
+    # 数据库连接地址：连接本机 MySQL 的 3306 端口和 mybatis 数据库。
+    # serverTimezone=UTC 设置时区，useUnicode 和 characterEncoding=utf-8 设置字符编码。
+    url: jdbc:mysql://localhost:3306/mybatis?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    # MySQL JDBC 驱动类，负责把 Java 程序连接到 MySQL 数据库。
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 指定 Spring Boot 使用 Druid 作为底层数据源和连接池实现。
+    type: com.alibaba.druid.pool.DruidDataSource # 自定义数据源
+
+
+    # druid 数据源专有配置
+    druid:
+      # 初始化时建立物理连接的个数
+      initial-size: 50
+      # 连接池的最小空闲数
+      min-idle: 5
+      # 连接池最大连接数
+      max-active: 200
+      # 获取连接时最大等待时间，单位毫秒
+      max-wait: 60000
+      # 既作为检测的间隔时间又作为 test-while-idle 执行的依据
+      time-between-eviction-runs-millis: 60000
+      # 连接保持空闲而不被驱逐的最小时间
+      min-evictable-idle-time-millis: 300000
+      # 用来检测连接是否有效的 sql，要求是一个查询语句
+      validation-query: SELECT 1 FROM DUAL
+      # 申请连接时执行 validationQuery 检测连接是否有效，开启会降低性能
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: true
+
+      # 配置监控统计拦截的filters，stat:监控统计、slf4j：日志记录、wall：防御 sql 注入
+      filters: stat,wall,slf4j
+      Max-pool-prepared-statement-per-connection-size: 20
+      use-global-data-source-stat: true
+      connect-properties:
+        druid.stat.mergeSql: true
+        druid.stat.slowSqlMillis: 500
