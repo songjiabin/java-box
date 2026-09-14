@@ -38,9 +38,37 @@ spring:
       pool-prepared-statements: true
 
       # 配置监控统计拦截的filters，stat:监控统计、slf4j：日志记录、wall：防御 sql 注入
+      # 这里主要是统计sql的
       filters: stat,wall,slf4j
       Max-pool-prepared-statement-per-connection-size: 20
       use-global-data-source-stat: true
       connect-properties:
         druid.stat.mergeSql: true
         druid.stat.slowSqlMillis: 500
+      # StatViewServlet 配置：开启 Druid 内置监控页面，用于查看连接池和 SQL 统计信息。
+      stat-view-servlet:
+        # 是否启用 Druid 监控页面。
+        enabled: true
+        # 监控页面的访问路径；访问 /druid/index.html 可以打开监控页面。
+        url-pattern: /druid/*
+        # 登录监控页面使用的用户名。
+        login-username: admin
+        # 登录监控页面使用的密码；正式环境建议通过环境变量或配置中心注入。
+        login-password: wssjb
+        # 允许访问监控页面的 IP，127.0.0.1 表示只允许本机访问。
+        allow: 127.0.0.1 # 为空或者为 null 时，表示允许所有访问
+        # 拒绝访问监控页面的 IP；拒绝规则优先级高于允许规则。
+        deny: 192.168.1.20 # 拒绝此 ip 访问
+        # 是否显示监控页面中的重置统计数据按钮。
+        reset-enable: false
+
+      # WebStatFilter 配置：统计 Web 请求、Session 和页面访问数据。
+      web-stat-filter:
+        # 是否启用 Web 请求统计过滤器。
+        enabled: true
+        # 拦截所有 Web 请求，以便记录接口和页面的访问情况。
+        url-pattern: /*
+        # 排除静态资源、Druid 监控页面和 JDBC 示例路径，避免干扰统计结果。
+        exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+        # 是否统计每个用户的 Session 访问数据。
+        session-stat-enable: true

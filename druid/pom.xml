@@ -28,6 +28,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
+        <!-- Spring Web 启动器，提供内嵌 Tomcat，使 Druid 监控页面可以通过浏览器访问。 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <!-- MySQL JDBC 驱动，负责建立 Java 程序与 MySQL 数据库之间的连接。 -->
         <dependency>
             <groupId>com.mysql</groupId>
