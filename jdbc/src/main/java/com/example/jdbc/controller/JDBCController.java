@@ -3,6 +3,7 @@ package com.example.jdbc.controller;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -60,6 +61,15 @@ public class JDBCController {
         jdbcTemplate.update(sql, objects);
         return "update-ok";
     }
+
+
+    @GetMapping("/delete/{id}")
+    public String deleteUser(@PathVariable("id") int id) {
+        String sql = "delete from mybatis.user where id = ?";
+        jdbcTemplate.update(sql, id);
+        return "delete-ok";
+    }
+
 
 
 }
