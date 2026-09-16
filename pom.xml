@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
     <!-- 声明当前聚合工程包含的子模块。 -->
     <modules>
-        <module>my-mybatis</module>
+        <module>mybatis</module>
         <module>spring</module>
         <module>spring-boot</module>
         <module>jdbc</module>
