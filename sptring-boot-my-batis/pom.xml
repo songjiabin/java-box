@@ -46,4 +46,28 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <!-- 将应用及其依赖打包成服务器可直接执行的 Spring Boot JAR。 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <!-- 当前工程使用自定义父 POM，因此显式指定插件版本。 -->
+                <version>3.3.5</version>
+                <configuration>
+                    <!-- 指定 Spring Boot 启动类，避免多模块工程识别到错误的入口。 -->
+                    <mainClass>com.demo.spring.boot.my.batis.StringBootMyBatisApplication</mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <!-- 在 package 阶段生成包含依赖的可执行 JAR。 -->
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>

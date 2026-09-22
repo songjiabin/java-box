@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="0fJwZNUaMt4BBRsFtmF6Lj">
+<head data-page-node-id="Ka7UA4qOD7oPTCeGLKwcXK">
+<meta charset="utf-8" data-page-node-id="BAVmbKsCC5Kg8VCkxaQ1i3">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" data-page-node-id="Sup5V9Gtr0pO6aOPTcCx8T">
+<meta name="theme-color" content="#f5f6f8" data-page-node-id="IH6mMTkHwMcjAmWyX7XVMy">
+<meta name="description" content="9/26–10/2 七天环线自驾行程速览：导航起点终点途经点、游玩顺序、充电桩位置与避坑提醒。" data-page-node-id="zvYOLf2YUwEjWD7HjGzKi1">
+<title>7 天环线自驾行程速览 · 手机版</title>
+<style>
+:root{
+  --bg:#f5f6f8; --card:#ffffff;
+  --ink:#16212b; --ink2:#566675; --ink3:#8f9caa;
+  --line:#e6eaef; --line2:#cbd8e4;
+  --blue:#15578f; --blue-soft:#eaf3fb; --blue-line:#b9cfe4;
+  --green:#0d6b52; --green-soft:#e8f5f0; --green-line:#c8e6da;
+  --red:#a32b2b; --red-soft:#fdeeee; --red-line:#f4d3d3;
+  --amber:#8a5209; --amber-soft:#fdf5e6; --amber-line:#f0dfc0;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif;
+  font-size:16px;line-height:1.75;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;
+  font-variant-numeric:tabular-nums;
+}
+.wrap{max-width:720px;margin:0 auto;padding:0 15px 56px;}
+
+.hd{padding:26px 2px 20px;}
+.kicker{font-size:12.5px;font-weight:700;letter-spacing:2px;color:var(--blue);margin:0 0 8px;}
+h1{font-size:25px;line-height:1.35;margin:0 0 9px;font-weight:700;letter-spacing:-.3px;}
+.sub{color:var(--ink2);font-size:14px;line-height:1.7;margin:0 0 18px;}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
+.facts div{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:11px 4px 9px;text-align:center;}
+.facts b{display:block;font-size:19px;font-weight:700;color:var(--blue);line-height:1.25;}
+.facts span{font-size:11.5px;color:var(--ink2);line-height:1.4;display:block;margin-top:2px;}
+
+.jump{
+  position:sticky;top:0;z-index:20;display:flex;gap:7px;overflow-x:auto;
+  padding:9px 15px;margin:0 -15px 18px;background:rgba(245,246,248,.93);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);scrollbar-width:none;
+}
+.jump::-webkit-scrollbar{display:none;}
+.jump a{
+  flex:0 0 auto;text-decoration:none;font-size:13.5px;font-weight:600;
+  color:var(--blue);background:var(--card);border:1px solid var(--line);
+  border-radius:999px;padding:5px 14px;line-height:1.5;
+}
+.jump a:active{background:var(--blue-soft);border-color:var(--blue-line);}
+
+.lead{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;margin-bottom:18px;}
+.lead p{margin:0;font-size:15px;line-height:1.8;}
+.lead .flow{color:var(--blue);font-weight:600;}
+
+.day{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:17px 16px 16px;margin-bottom:16px;scroll-margin-top:64px;}
+.dhd{display:flex;gap:11px;align-items:flex-start;margin-bottom:11px;}
+.badge{
+  flex:0 0 44px;width:44px;height:44px;border-radius:13px;background:var(--blue);color:#fff;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;
+}
+.badge b{font-size:17px;font-weight:700;letter-spacing:-.3px;}
+.badge span{font-size:9.5px;letter-spacing:1px;opacity:.82;margin-top:3px;}
+.dhd .tt{flex:1;min-width:0;padding-top:1px;}
+.dhd h2{font-size:17px;line-height:1.45;margin:0 0 3px;font-weight:700;letter-spacing:-.2px;}
+.dhd .dt{font-size:13px;color:var(--ink2);margin:0;font-weight:500;}
+
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px;padding:0;}
+.chips li{font-size:12.5px;line-height:1.5;color:var(--ink2);background:#f3f6f9;border-radius:7px;padding:4px 9px;}
+.chips li.key{color:var(--blue);background:var(--blue-soft);font-weight:600;}
+
+.route{background:var(--blue-soft);border:1px solid var(--blue-line);border-radius:12px;padding:13px 14px;margin:0 0 15px;}
+.rlabel{font-size:12px;font-weight:700;letter-spacing:1.2px;color:var(--blue);margin:0 0 9px;}
+.rlabel.tight{margin-bottom:8px;}
+.rrow{position:relative;display:flex;gap:10px;padding:0 0 13px;align-items:flex-start;}
+.rrow:last-child{padding-bottom:0;}
+.rrow:not(:last-child)::before{content:"";position:absolute;left:5px;top:15px;bottom:1px;border-left:1.5px dashed var(--blue-line);}
+.rdot{flex:0 0 11px;width:11px;height:11px;border-radius:50%;background:#fff;border:2px solid var(--blue);margin-top:5px;}
+.rdot.v{border-style:dashed;border-color:#7ba7cc;}
+.rdot.e{background:var(--blue);}
+.rlab{flex:0 0 34px;font-size:12px;font-weight:700;color:var(--blue);line-height:1.75;margin-top:1px;}
+.rtx{flex:1;font-size:14.5px;line-height:1.7;}
+.rtx em{font-style:normal;color:var(--ink2);font-size:13px;}
+.rwarn{margin:10px 0 0;font-size:13.5px;line-height:1.7;color:var(--red);background:#fff;border-radius:8px;padding:8px 11px;border:1px solid var(--red-line);}
+
+.tl{list-style:none;margin:0;padding:0;display:grid;row-gap:13px;}
+.tl li{display:grid;grid-template-columns:54px 14px 1fr;align-items:stretch;}
+.tm{font-size:13px;font-weight:700;color:var(--blue);padding-top:2px;letter-spacing:-.2px;}
+.tm.wide{font-size:12px;padding-top:3px;}
+.tdot{position:relative;}
+.tdot i{position:absolute;left:50%;transform:translateX(-50%);top:9px;width:7px;height:7px;border-radius:50%;background:var(--blue);display:block;}
+.tl li:not(:last-child) .tdot::after{content:"";position:absolute;left:50%;transform:translateX(-50%);top:18px;bottom:-13px;border-left:1px dashed var(--line2);}
+.tx{font-size:15px;line-height:1.75;padding-top:1px;}
+.tx b{font-weight:650;}
+.tx .hl{color:var(--blue);font-weight:650;}
+.tx .no{color:var(--red);font-weight:650;}
+
+.cl{display:flex;gap:9px;padding:11px 13px;border-radius:11px;font-size:14px;line-height:1.72;margin-top:11px;border:1px solid transparent;}
+.cl .k{flex:0 0 auto;font-size:11.5px;font-weight:700;letter-spacing:.8px;padding:2px 7px;border-radius:6px;color:#fff;height:fit-content;white-space:nowrap;margin-top:2px;}
+.cl .b{flex:1;min-width:0;}
+.cl .b b{font-weight:650;}
+.cl.charge{background:var(--green-soft);border-color:var(--green-line);}
+.cl.charge .k{background:var(--green);}
+.cl.warn{background:var(--red-soft);border-color:var(--red-line);}
+.cl.warn .k{background:var(--red);}
+.cl.tip{background:var(--amber-soft);border-color:var(--amber-line);}
+.cl.tip .k{background:var(--amber);}
+.cl.info{background:#f3f6f9;border-color:var(--line);}
+.cl.info .k{background:#5f7183;}
+.cl ul{margin:6px 0 0;padding-left:18px;}
+.cl ul li{margin:3px 0;}
+
+.end{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:17px 16px 6px;margin-top:20px;}
+.end h2{font-size:17px;margin:0 0 4px;font-weight:700;letter-spacing:-.2px;}
+.end .hint{font-size:13px;color:var(--ink2);margin:0 0 13px;}
+.steps{list-style:none;counter-reset:s;margin:0 0 22px;padding:0;display:grid;row-gap:9px;}
+.steps li{counter-increment:s;display:grid;grid-template-columns:25px 1fr;gap:10px;align-items:start;}
+.steps li::before{
+  content:counter(s);width:23px;height:23px;border-radius:8px;background:var(--green);color:#fff;
+  font-size:12.5px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:2px;
+}
+.steps .st{font-size:14.5px;line-height:1.65;}
+.steps .st b{font-weight:650;}
+.steps .st span{display:block;font-size:12.5px;color:var(--ink2);line-height:1.55;}
+.rules{list-style:none;counter-reset:r;margin:0 0 14px;padding:0;display:grid;row-gap:9px;}
+.rules li{counter-increment:r;display:grid;grid-template-columns:25px 1fr;gap:10px;align-items:start;}
+.rules li::before{
+  content:counter(r);width:23px;height:23px;border-radius:8px;background:var(--amber);color:#fff;
+  font-size:12.5px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:2px;
+}
+.rules .rt{font-size:14.5px;line-height:1.65;}
+.rules .rt b{font-weight:650;}
+
+.foot{color:var(--ink3);font-size:12.5px;text-align:center;margin:26px 0 0;line-height:1.9;}
+.foot b{color:var(--ink2);font-weight:600;}
+</style>
+</head>
+<body data-page-node-id="GRwEzDVDiBt3fCkbCceHB8">
+<div class="wrap" data-page-node-id="kSiAByZ9Iqs248vRdl1q52">
+
+<header class="hd" data-page-node-id="sOnxRlFHk9PdqtyvdIXjud">
+  <p class="kicker" data-page-node-id="CzsIn5NG8bEBZ1B0Lt4DE0">2026 中秋 · 国庆</p>
+  <h1 data-page-node-id="WMxPcodPwR6A5Gqqfq2dzE">7 天环线自驾行程速览</h1>
+  <p class="sub" data-page-node-id="1mh8xkxhEO4xNW6mAtBf29">9/26 周六 — 10/2 周五 · 2 大人 + 1 个 5 岁半男娃 · 纯电车（标称 400 km，按 280 km 保守估）</p>
+  <div class="facts" data-page-node-id="chh4NlkqThemb9JCRpKiE0">
+    <div data-page-node-id="nM6pFNTRVLlJiYQG02RWZX"><b data-page-node-id="0Y9KSd2pXu9A4VHvBfFFbI">2160</b><span data-page-node-id="o8fLFrmPTRQIvaIvAYgMjz">总公里</span></div>
+    <div data-page-node-id="gn2dQavG3dD6i8HcgcUyvQ"><b data-page-node-id="ysUrHH9jDx0vxfeWCsPnkv">7</b><span data-page-node-id="2YIdi4fE2te9TULyI5AqQP">天</span></div>
+    <div data-page-node-id="DVJwpUA28AAuVatfNbFRAK"><b data-page-node-id="EUqFxlF7yo7hacSDCDBLPn">1</b><span data-page-node-id="HCAIlJN53dVeEIxXJpkt4h">天交过路费</span></div>
+    <div data-page-node-id="zMLrKAy7BVEYDplxRPtKQh"><b data-page-node-id="TmVEUKtqbHqRZJsL3rC3ot">0</b><span data-page-node-id="Z3B0P5YwLfSQCGUwGh0O4Q">回头路</span></div>
+  </div>
+</header>
+
+<nav class="jump" data-page-node-id="kxn5uvelyWqnijxJEzHE5f">
+  <a href="#d1" data-page-node-id="zJzRPZ4dTIjYratXacplMy">D1 9/26</a>
+  <a href="#d2" data-page-node-id="EAwDDQMofgnRSB2XwID8nC">D2 9/27</a>
+  <a href="#d3" data-page-node-id="qAdHZTIeZrRaPJQhXBB5qC">D3 9/28</a>
+  <a href="#d4" data-page-node-id="Dm4W46qsFZLnkCitdxIicm">D4 9/29</a>
+  <a href="#d5" data-page-node-id="bC3fpHfZwGEy4psmrywh4D">D5 9/30</a>
+  <a href="#d6" data-page-node-id="3EX3hIv00yWV5JWPFmGNoh">D6 10/1</a>
+  <a href="#d7" data-page-node-id="poOBtleFB86nz1mq3lMB0n">D7 10/2</a>
+</nav>
+
+<div class="lead" data-page-node-id="ZymHzoah4PRLXUEpEWr9PT">
+  <p data-page-node-id="JMjaAFE9D9K3HS7j6oKhpD">整体走向：<span class="flow" data-page-node-id="Cxcge5R8CylVnrqDOjRL9p">北京石景山 → 乌兰布统草原 → 克什克腾（达达线 + 热阿线）→ 赤峰 → 朝阳 → 兴城 → 山海关 → 北戴河 → 回北京</span>。全程只有 <b data-page-node-id="HAUYu5NXR0eaA6GsuGlUUH">D1 一天要买过路费（约 100 元）</b>，其余要么走国道、要么正好落在 10/1 起的高速免费窗口里。<br data-page-node-id="RunOys7Ioorbdd07Ldqzpb">下面每天一段，固定按「<b data-page-node-id="UAE9UGP1yQdwQcbyHgZGc6">导航怎么设 → 时间怎么走 → 玩什么 → 停哪 → 在哪充电 → 避什么坑</b>」写。</p>
+</div>
+
+<!-- D1 -->
+<section class="day" id="d1" data-page-node-id="d8IDQ1ZuSoDcAW42I7zplQ">
+  <div class="dhd" data-page-node-id="vCS83WllN28RzMZp5DnJDA">
+    <div class="badge" data-page-node-id="6wBDSLsoxCv0oFmadmDx3t"><b data-page-node-id="oHoSX9PWpTEMrtCWXPMO7O">D1</b><span data-page-node-id="jGB2VeSA3Dv1MG4DN9h8Zx">DAY</span></div>
+    <div class="tt" data-page-node-id="NLuHbYLwmj9e8wjT5REG1F">
+      <h2 data-page-node-id="XP86fWWxkXYPeuoiCXcZ95">石景山 → 围场 → 乌兰布统</h2>
+      <p class="dt" data-page-node-id="vbPRgsDeRfkoj4xqzXHjgM">9/26 周六 · 全天赶路 + 傍晚进草原</p>
+    </div>
+  </div>
+  <ul class="chips" data-page-node-id="pTfh19OtA5nATKoMpPSiaH">
+    <li class="key" data-page-node-id="hFCbh0HM9DTOJfucriDNr8">约 540 km</li>
+    <li data-page-node-id="zGeMRQu8syeWQHoP1fGP1V">住 乌兰布统（红山军马场一带）</li>
+    <li data-page-node-id="sRrvLIHYdWrPPKrDeAVjFc">今天唯一要交过路费</li>
+  </ul>
+
+  <div class="route" data-page-node-id="hF3frTrwfczOKS0VAsVCt0">
+    <p class="rlabel" data-page-node-id="vc8d2VvvvcBBKFLRQl3rEo">导航这样设</p>
+    <div class="rrow" data-page-node-id="Vi0F1r6jiiDebTFH6Bopn4"><span class="rdot" data-page-node-id="o0CNUFkJVZLom41ySZxsmB"></span><span class="rlab" data-page-node-id="c0wksVzAtCr4O52jry7gm4">起点</span><span class="rtx" data-page-node-id="pI3EELTH48TCyyhsqBAJrj">八角北里（北4门）</span></div>
+    <div class="rrow" data-page-node-id="ifyXLR5bFJl8ieFdIIRAgC"><span class="rdot v" data-page-node-id="b7Wbuy89RCo89HYnF0JwXm"></span><span class="rlab" data-page-node-id="mWIpiWo7nBVNuCDFWOvQNx">途经</span><span class="rtx" data-page-node-id="zHj3CxMA5a8oOnN44RQIVd">太师屯服务区 → 围场服务区 → <b data-page-node-id="8pdCebYrcvMBeiwUA6k0QZ">大河口</b></span></div>
+    <div class="rrow" data-page-node-id="Sqrx7xeR0jt3fbD9ICaXyZ"><span class="rdot e" data-page-node-id="QnbZEV2DjBEAtKKRSHvLyz"></span><span class="rlab" data-page-node-id="t2gbII3Mm6BQsbYYomNa3o">终点</span><span class="rtx" data-page-node-id="PJnmdnZidPnuwhn0YxoDHT">乌兰布统景区中心站售票处</span></div>
+    <p class="rwarn" data-page-node-id="GcRb1urSaEayFbX4NsAe2P">「大河口」这个途经点千万别漏 —— 它决定你要不要白买塞罕坝的门票。</p>
+  </div>
+
+  <ol class="tl" data-page-node-id="xLl2nRrLzZMVNjAGcGN1Bd">
+    <li data-page-node-id="GlteBwX3yDPch2Hlz2T8N3"><span class="tm" data-page-node-id="LvoU1CnJfKd3XJNmAZaf3d">05:40</span><span class="tdot" data-page-node-id="QSzZU9ZVa2fUEvdjnd1zYJ"><i data-page-node-id="IkrIDvAEbPbs87gUxeR76q"></i></span><span class="tx" data-page-node-id="qSngiCERaWEn6798lJjUut"><b data-page-node-id="rqXpidTnvnqdYNF1Akar6Y">必须出发。</b>9/26 是中秋假期第二天，京承高速望和桥—密云段会堵，6:30 前过密云基本就畅通。</span></li>
+    <li data-page-node-id="efYPeAVRhkWLCfMooJpUVd"><span class="tm" data-page-node-id="BUxjOl6WcCqTGDL818ikRf">07:20</span><span class="tdot" data-page-node-id="FkLJCLTMVo67d2PlAjXGhO"><i data-page-node-id="FvYMrSjplLGGAyx2KrH1qf"></i></span><span class="tx" data-page-node-id="049v9bpUHuv64g6AHsazAM">到<b data-page-node-id="B676s4P06X9ZKZxoUAMrJY">太师屯服务区</b>（约 130 km）充电、吃早饭，留 40 分钟。</span></li>
+    <li data-page-node-id="Q8NEJ7wDV0tEUhIKL7DmEN"><span class="tm" data-page-node-id="wXnBpnwPiXRRpgsnaLc8By">10:40</span><span class="tdot" data-page-node-id="uRvHGFJiP16I5AZRVI22y7"><i data-page-node-id="0Fijc2XgkCGxcIiBJgfBdI"></i></span><span class="tx" data-page-node-id="V1NEYA2BhF0ZXQPupjxsIx">到<b data-page-node-id="nx3PobvzqmEylpQsJeQ8rp">围场服务区</b>（约 340 km）—— 这是下高速前最后一个服务区，<span class="hl" data-page-node-id="FSAxONtWDSSNurD1WBLESi">这次必须充满</span>，顺便吃午饭留 1 小时。</span></li>
+    <li data-page-node-id="LEIW7ixxa3UIpZryBStzmK"><span class="tm" data-page-node-id="UUFEAT9GNPL6br804wtUgr">12:00</span><span class="tdot" data-page-node-id="CMMirZJs5AjjYTr9yja3tp"><i data-page-node-id="jVxhtsXHaDR323XkXWdree"></i></span><span class="tx" data-page-node-id="ULhb2xqFGrO8MqpRA1Aeyk">从围场出发，走御道口 → 大河口 → 元宝山，约 200 km、3.5 小时。</span></li>
+    <li data-page-node-id="iGbT5f6Q14fQZq4DMfvPEK"><span class="tm wide" data-page-node-id="TYfHigkGx1wrHzBCYH4HeQ">途中</span><span class="tdot" data-page-node-id="fXcxDZdCzKvZiqsQWvIpVW"><i data-page-node-id="yYSqqdEqAI7ERCBDDScZt6"></i></span><span class="tx" data-page-node-id="Rzb9GDMlWm49P5Nf2J0yXz">到大河口乡路口要<span class="no" data-page-node-id="wmpb2DeEj2EOuvHDz6KLLa">右转</span>；右转后沿途全是「塞罕坝国家森林公园」的指示牌，<span class="no" data-page-node-id="sQuMAyJ5nJtZY5dNPMu00V">千万别跟着走</span>（那是绕回河北境内，既多跑 70 km 又要交 150 元/人门票）。正确走法：右转 → 撅尾巴河村 → 元宝山乡 → 丁字路口右转 → 乌兰布统<b data-page-node-id="c7Xwtw5RH8KC2rEHOz3rEr">西门（西北门）售票处</b>。出发前在高德里点开这一段看一眼走向，确认没经过塞罕坝林场。</span></li>
+    <li data-page-node-id="Hq9N47To99o2xSlRhIvMbk"><span class="tm" data-page-node-id="aomelAtA2mU3lAyGRUwyq4">15:20</span><span class="tdot" data-page-node-id="9pQSMoZR9RQVKDnP43PJj6"><i data-page-node-id="dZMV0fRK0xI3TZ7WBZ3iwa"></i></span><span class="tx" data-page-node-id="NOrHOjNXDy1W4bjCTLehs2">到售票口买票开车进景区（景区里没有观光车，全靠自驾）：门票 <b data-page-node-id="jjOhXXHTHGHsditYciJcz8">120 元/人</b>，自首次检票起 <b data-page-node-id="3OEelV0L53G0hV85tUVnkc">72 小时内有效、可多次进出</b>，今天买一次、明天凭票直接进；5 岁半的孩子<b data-page-node-id="pkfGpNOggKVtT5HSJGmjw0">6 周岁以下免票</b>，记得带户口本。</span></li>
+    <li data-page-node-id="WmSB0cHpdVPbC2K2GSKPRt"><span class="tm" data-page-node-id="kBeEKAEnVj4WWvhXMHqhrY">15:50</span><span class="tdot" data-page-node-id="ale1OSVFgRpDxkqBMZ9lZT"><i data-page-node-id="Bc2r5VUizRzbMhHyO8HSIW"></i></span><span class="tx" data-page-node-id="k2H0bw1I9oQmxT4ERwRro2">到<b data-page-node-id="c1v5G6m2aD1CMpUmsIWmH6">场部（红山军马场）办入住</b>、卸行李 —— 顺手跟老板确认今晚能不能充电，并让餐厅把烤羊腿先烤上（现点要等 2–3 小时）。</span></li>
+    <li data-page-node-id="lFfGIPzAGDhuC9DTkutoHB"><span class="tm" data-page-node-id="DaRhUi2znnJHzN2XgL5E4S">16:30</span><span class="tdot" data-page-node-id="TUvFub2bwgRmcrGSlLlTRY"><i data-page-node-id="N6LbtFvoNmsfugklxsnr0l"></i></span><span class="tx" data-page-node-id="v07nzHRxhDU0Bx3vZS1AaC"><b data-page-node-id="Sa0xDHGIBXF6b2f3spr3x9">影视基地</b>，约 40 分钟，60 多部影视剧的外景地。</span></li>
+    <li data-page-node-id="Go1p1oBmF01vfRplGynrsO"><span class="tm" data-page-node-id="kCYRNHe1HCLUmg75BJHvEd">17:00</span><span class="tdot" data-page-node-id="l3YLyjbXdV2P7MwQ38MkpM"><i data-page-node-id="oXAPzGbmZJQnYkjv3eui2B"></i></span><span class="tx" data-page-node-id="iL6ewsvz1nDylTUv3HrOG1"><b data-page-node-id="GFQjX2TpSP1OpPzEIYDKov">百草敖包</b>，场部西约 1 km，顺路，10 分钟。</span></li>
+    <li data-page-node-id="Gu1WT3kLwblT5V73m8nB05"><span class="tm" data-page-node-id="UlTnS2xHVRvMEvtrHcPROU">17:15</span><span class="tdot" data-page-node-id="HzpFVAk6vsxPquHRXVroJT"><i data-page-node-id="WHLnVybXiYqAmTxboVpZdn"></i></span><span class="tx" data-page-node-id="C0G9MQDw7OthbnGaITTXdS"><b data-page-node-id="bSbBUTAl06HVySG7W8ijyM">将军泡子等日落</b>（约 17:50 落）。三大日落点里层次最好的一个，湖 + 草 + 马群。私家车只能停入口停车场，到湖边还有一段路，<b data-page-node-id="myUZ1PqXVpcrcfXYwtPSqX">骑马或坐马车进去正好</b>，也省得孩子走 —— 但<span class="no" data-page-node-id="0CaJ1fI5JoPF6SFHRJx31e">先谈价再上马</span>（明码约 200 元/小时，2026 年暑期价格战已跌到 80 元左右，路边揽客的还能再砍）。</span></li>
+    <li data-page-node-id="dPthvo6Jr9UogF8du5NXt3"><span class="tm" data-page-node-id="XpXpOCyqfn5g2F7HxAvCym">18:40</span><span class="tdot" data-page-node-id="C6MRHk0WA6ePORVhvfxcx8"><i data-page-node-id="Pfil0rLTWhirXurx8cnSRC"></i></span><span class="tx" data-page-node-id="FQ6M7HQ3RoMgwQeNICp0R9">回场部<b data-page-node-id="pHIXYrvEr5B38LD5CIhDpY">吃晚饭</b>：手把肉（清水煮、蘸野韭菜花，不辣，孩子能吃）、蒙古奶茶、奶豆腐、炒米酸奶、蒙古馅饼、莜面窝窝，人均 80–120 元。</span></li>
+    <li data-page-node-id="ryzWOVPM3qaeb6o9BgYznV"><span class="tm" data-page-node-id="CnJnr3Bk3JYaADtjGp6UbR">20:00</span><span class="tdot" data-page-node-id="HtBMwoB9ysi66Xge5we0su"><i data-page-node-id="r3Ch4cWZPyq7qZUv9iMCbi"></i></span><span class="tx" data-page-node-id="6tCVr8U2V0eHzNeNV1KJmT">看「<b data-page-node-id="Cer3LKL7leQZBbELlRZVGE">乌兰布统之夜</b>」（阅兵村，约 2 小时，128 元起）—— 夜场有季节性停演，<span class="no" data-page-node-id="lHqKEdclpnMyz4DA7avGW4">出发前一定打电话问当天演不演</span>。</span></li>
+    <li data-page-node-id="WA8aoLnUx6CqVpp0EtSV1s"><span class="tm" data-page-node-id="X24Mtzi2Th4mg9isHGxWUv">22:15</span><span class="tdot" data-page-node-id="3ix8IVMa8SpFEVyQyAvEmi"><i data-page-node-id="jLLGrWbbH5eNAYHiMih9dN"></i></span><span class="tx" data-page-node-id="m60jxkRrUJ2qEbYMZEmioU">回民宿。草原夜里没路灯，别开远路。</span></li>
+  </ol>
+
+  <div class="cl charge" data-page-node-id="hFW4unS5GUb3EscmlLuhtt"><span class="k" data-page-node-id="OICrbwmVD6XyVfT8LdBR8K">充电</span><div class="b" data-page-node-id="nlNF6evcZsJL4RdOSdDBfQ">今晚<b data-page-node-id="YEwDHjilrKdojRD0Tmod7X">必须在景区里充上</b>。首选 <b data-page-node-id="cJQkTZD1xQj2hDic8GXd0C">郭二子民族度假村</b>（4 个桩，含 120 kW 超充，景区里最快）或 <b data-page-node-id="4HgssG7DsgODZk4wcbJeT2">富贵园度假村</b>（蔚来站，2 直流 + 2 慢充，约 1.6 元/度，停车免费）。订房就订这两家、订完立刻打电话确认桩能用；随车带一根 <b data-page-node-id="ecihm6uibpRFJ2ELtKrsGy">30 米延长线 + 家用插头</b>兜底（民宿允许接 220V 的话，一小时能补约 8 km）。</div></div>
+  <div class="cl warn" data-page-node-id="E6ENG2EzDTvs95OoBvfY78"><span class="k" data-page-node-id="Aps8KXRSpLA63WUagE0o4y">避坑</span><div class="b" data-page-node-id="awK1qtfFtsgv2uzShJEFNq">别点辣的、别跟路边拉客的走、点菜前先问价看秤。</div></div>
+  <div class="cl tip" data-page-node-id="FD3o3UmEPSeQVzp2vglwLU"><span class="k" data-page-node-id="2iPQGvqRE9Nd86zjNu7hkD">备选</span><div class="b" data-page-node-id="nYfnBoPexFDNdc4IhZTwfm">如果堵得厉害（比如 10:00 后才过密云），就在围场县城住下，把乌兰布统挪到第二天上午，别硬撑到天黑走山路。</div></div>
+</section>
+
+<!-- D2 -->
+<section class="day" id="d2" data-page-node-id="RFq9B5ZuYGUcFImTSBK2Tz">
+  <div class="dhd" data-page-node-id="HLMTiCW16YWE5Gu8DV4BFD">
+    <div class="badge" data-page-node-id="7xdGs4qGjQGatVQXLDtHNX"><b data-page-node-id="tk3shUocKjplkRrCNFERl5">D2</b><span data-page-node-id="zKPGmgrPBBvkGvLLPoRgEN">DAY</span></div>
+    <div class="tt" data-page-node-id="4KNPOYVdR9Ti1NU0OGKdqh">
+      <h2 data-page-node-id="HuOP86FpEqHQiXcezcXhPM">乌兰布统深度 → 桦木沟 → 经棚</h2>
+      <p class="dt" data-page-node-id="GDSAg0WD9NgTQeGoAOf5Jl">9/27 周日 · 全天在景区里玩</p>
+    </div>
+  </div>
+  <ul class="chips" data-page-node-id="XROwBbD5W92xDK3GhL2cwB">
+    <li class="key" data-page-node-id="u0dt5wDFDWp0APNzM2N4n8">约 215 km</li>
+    <li data-page-node-id="dl82KHz2S4GFDGTK9PhHsz">住 经棚镇（克什克腾旗政府驻地）</li>
+    <li data-page-node-id="SlaD49AGhogVt3frvQI4eE">昨天的门票今天还能用</li>
+  </ul>
+
+  <div class="route" data-page-node-id="jFQ0odf6puumBmxOdSHVRi">
+    <p class="rlabel" data-page-node-id="HYbYA1qe7GojdL8J01M5Kv">导航这样设</p>
+    <div class="rrow" data-page-node-id="SkgUTkOOeNUnCK34GJlJyE"><span class="rdot" data-page-node-id="Uf21SEygFSP2dyFxgXlOI0"></span><span class="rlab" data-page-node-id="3C2QRokaIHhDLbNOOi0mzP">起点</span><span class="rtx" data-page-node-id="USFlJGtDER811msEFQdR97">红山军马场</span></div>
+    <div class="rrow" data-page-node-id="LKbn9b2T5GJidrXNUjhLqm"><span class="rdot v" data-page-node-id="wfwRuHjoWh1riZltNL8pdy"></span><span class="rlab" data-page-node-id="pGEZ6EgVGdHercT6rk0ihm">途经</span><span class="rtx" data-page-node-id="GCfNl12opmnT3J88BzElcI">五彩山 → 公主湖 → 盘龙峡谷 → 桦木沟国家森林公园 → 克什克腾世界地质公园博物馆</span></div>
+    <div class="rrow" data-page-node-id="ktciUspsjmnW7pFh7X11iG"><span class="rdot e" data-page-node-id="I9YGnheG4Dy0lspzGM4FDQ"></span><span class="rlab" data-page-node-id="hNNrcuyLE8hBjeO5qz1NrJ">终点</span><span class="rtx" data-page-node-id="B9DSJss5qFoYED6DVdcXdf">经棚镇</span></div>
+    <p class="rwarn" data-page-node-id="SXaaA24kFyBE0OsGE6M6yL">景区里导航不太准，跟着主环路走、看路牌拐弯。</p>
+  </div>
+
+  <ol class="tl" data-page-node-id="oCF6U1ipPMQnVuCxu6PejF">
+    <li data-page-node-id="vWqwhSh24x55lyycCw4CIv"><span class="tm" data-page-node-id="M5HrwIuTlEYAzaUNpqZ70H">07:00</span><span class="tdot" data-page-node-id="ETBm8m1GxHYEeIOKZTnTTw"><i data-page-node-id="j6dFCtNNJZEuBovZ2GzjnQ"></i></span><span class="tx" data-page-node-id="X9XiV8W9Q7krFsTQoEhugw"><b data-page-node-id="BcrQGeb2OqMmJuRCt0o0rW">起床看晨雾</b>（想看日出就 5:20 起，日出约 6:00；早晨接近 0℃，羽绒服 + 帽子手套都带上），08:00 早饭。</span></li>
+    <li data-page-node-id="xRaOJDNWPJ4lb66IRuq5k3"><span class="tm" data-page-node-id="GWr8G9Pe8K43g1KmLxUIjU">08:30</span><span class="tdot" data-page-node-id="t52kpYN54ylRk0I1Lqqret"><i data-page-node-id="aOmLdgdM8AX2rFkUyeonE1"></i></span><span class="tx" data-page-node-id="ignE8QndD4G5Ff8TC8wwyG"><b data-page-node-id="a0RrgfEzXMAGYOVqBXgXpO">五彩山</b>（约 45 分钟，车能开到山脚附近）—— 10 月初正是金黄，是这一带秋天最好看的地方，放上午第一站光线最好。</span></li>
+    <li data-page-node-id="lLeAHH1tcQ6fucQC0bZDvy"><span class="tm" data-page-node-id="Dk5HdY7wLgvmEnP0awgpRt">09:30</span><span class="tdot" data-page-node-id="RRzTrwk1rHCfCtLloGBVId"><i data-page-node-id="69jjMH4G6XFdcZgyBqLry2"></i></span><span class="tx" data-page-node-id="Zk0lhBlUAJylU2rDojIg7p"><b data-page-node-id="JBEdaaNbYEUlHnx3NsnIZJ">公主湖</b>（约 40 分钟，水面约 50 亩、四周白桦环绕，最容易出片）。</span></li>
+    <li data-page-node-id="QBdNXsFBFhCazwe9kje8ad"><span class="tm" data-page-node-id="L2EfCvzbk91FqDVwzXhd3X">10:30</span><span class="tdot" data-page-node-id="wakqDxW9UQ0Ka8W33zV2UE"><i data-page-node-id="28wZFLkPW6GE3mMC7b5Cbf"></i></span><span class="tx" data-page-node-id="C6H8oZizGRC15KePghXgqs"><b data-page-node-id="57pG0sySUFp8vFkWFyHTTN">盘龙峡谷</b>（约 50 分钟，萨里克河九曲十八弯，沿栈道走一小段，孩子能撒开跑，是全程最适合「放风」的一站）。昨天的门票还在 72 小时内，凭票直接进，<b data-page-node-id="OuwRdFd1MygD2n4fjhB0g7">不用再买</b>。</span></li>
+    <li data-page-node-id="HcSGE1KiuWjklH0ATGAAGe"><span class="tm" data-page-node-id="YNk8A012oC8eEGoTIH75F8">11:40</span><span class="tdot" data-page-node-id="LfqjYMVHj7IKBaBBPuiOJ3"><i data-page-node-id="0sECzujdMlCOyTuD2nY4N4"></i></span><span class="tx" data-page-node-id="L7VL7I50ToOteul34A2UgD">回场部<b data-page-node-id="vesXkiv0E1KqHhFTRMf07O">吃午饭</b> —— 景区里也有餐厅，但场部选择多、价格更实在。</span></li>
+    <li data-page-node-id="bIY8Q5wX2hzgwfnDvYJs0m"><span class="tm" data-page-node-id="nAmw4I7dMPt5bQWkUKPbMC">12:50</span><span class="tdot" data-page-node-id="vmOhznHTEZj8gOGmUaAfgW"><i data-page-node-id="yanc3kdGQ73txwTl9TZNiA"></i></span><span class="tx" data-page-node-id="qcYEHljEITiVLRve8YyYiL">出发去桦木沟，约 50 km。</span></li>
+    <li data-page-node-id="6nCrHsTeW1N2EzVzrdEw7o"><span class="tm" data-page-node-id="DwAK3meEgPZgekVngOUAjh">14:00</span><span class="tdot" data-page-node-id="iMgNL7DmpPBkhpYHN4Qr5M"><i data-page-node-id="wRp04RqvWzqHkWMli3fh8S"></i></span><span class="tx" data-page-node-id="vVFbRlZp0M8VdlhQcqacWQ"><b data-page-node-id="ABjiNGcT1HgVfkZEeU6cDO">桦木沟国家森林公园</b>：成片白桦林，叶色正黄，是全程拍照最好的地方，门票约 40 元/人。</span></li>
+    <li data-page-node-id="09OSyVFGfDmoNVUX4FWQaL"><span class="tm" data-page-node-id="TrLuKorAHHXKxpMgB1cAKW">15:30</span><span class="tdot" data-page-node-id="9qVMkScAQsUTSqH8O9NmZ5"><i data-page-node-id="on5owk2gYyHBsS5GkGKSIS"></i></span><span class="tx" data-page-node-id="GSisT2vBpaz2CGSqYQzNhy"><span class="no" data-page-node-id="0vO3YAtVECJcJwiJre5ynw">必须离开桦木沟</span> —— 到经棚镇还有约 114 km、近 2 小时，晚了就赶不上充电。</span></li>
+    <li data-page-node-id="6BqQEkWsn7dutCF3BWEILG"><span class="tm" data-page-node-id="B3o6pD3No71McWAyM3oldZ">16:30</span><span class="tdot" data-page-node-id="p9h7UGtnuIxlKl62UNh6Yu"><i data-page-node-id="SChtjWrRwfy6pXi5fRaNGO"></i></span><span class="tx" data-page-node-id="F5WrOHWApSvf2sEcw2cL2G">顺路看<b data-page-node-id="yIg76V1wW6cbASDLW0RSFC">克什克腾旗地质博物馆</b>（免费，恐龙化石、冰川遗迹；周一闭馆，9/27 是周日正常开）。</span></li>
+    <li data-page-node-id="coimwhYAgJ0DD1Snzru2BB"><span class="tm" data-page-node-id="N9FBrrJNFGO8fzZEKflfPb">17:30</span><span class="tdot" data-page-node-id="ZLIK73SLEoGz7svQPGGMh6"><i data-page-node-id="KEAd603FVYLprChLGe0GYR"></i></span><span class="tx" data-page-node-id="JvGZYHv8SvYxA6wEicAgxK">到<b data-page-node-id="gD4vYBOE8co6MGqsrr6SXT">经棚镇充电，这次必须充满</b>。</span></li>
+    <li data-page-node-id="tH5OGfBpYwAsA7P3Biw5Fz"><span class="tm" data-page-node-id="wkU8qVXxnGFmBOzy0HhLG4">18:00</span><span class="tdot" data-page-node-id="D87zuZEjS4vRrPB2UzAUdm"><i data-page-node-id="rxYqhVjEejJeGQIPjTZH78"></i></span><span class="tx" data-page-node-id="tdCjFyZV3ApTZ5yRDyEUNU">入住 + 晚饭（克旗的涮羊肉、蒙餐都不错）。</span></li>
+  </ol>
+
+  <div class="cl charge" data-page-node-id="RhuegzLvHyWFmvlQnF7OXD"><span class="k" data-page-node-id="QjBuqrj2z0AA98IdbIIkGK">充电</span><div class="b" data-page-node-id="TcyLy04CazB6QXkHtIzToI">搜「<b data-page-node-id="l2GC7QXGbmvThwKpqJQmKh">国家电网汽车充电站（解放路）</b>」，位置在经棚镇解放路吉祥嘉园西南侧约 30 米；备选「宇环加油站充电站」。经棚是这一带充电最靠谱的地方 —— 从这里往西，可靠快充就只剩达来诺日一处了。</div></div>
+  <div class="cl info" data-page-node-id="X0O1lFAuFQ9CEi9xuQwUh5"><span class="k" data-page-node-id="TJidoVvqFLIKPv6HSQ0qGc">停车</span><div class="b" data-page-node-id="zAozrWRwUEDC70VTiBB53L">五彩山、公主湖、盘龙峡谷都有停车场，车停好再走。</div></div>
+  <div class="cl warn" data-page-node-id="FV2TxTnQTPmrcd49aRLteZ"><span class="k" data-page-node-id="FwzetVInKgaLttXdiEXDLH">避坑</span><div class="b" data-page-node-id="EkM8PjGsaPgvXbpDjvHQoh">草原上限速建议 40 km/h 以下，砂石路降到 20 km/h；<b data-page-node-id="jEOy1uizi3KJKVRaTWQ6DW">遇到牛羊过马路就停车让行，别鸣笛</b>；别开进未开放的私人草场。</div></div>
+  <div class="cl tip" data-page-node-id="QTb3hiq7RKeIOKk91RyJx6"><span class="k" data-page-node-id="yxOahWjEcMAEEFGHtA0zPM">里程</span><div class="b" data-page-node-id="Cy8REaeQGQzno4eK2LtGqp">全天实际要开约 215 km ＝ 景区内环路 53 km ＋ 到桦木沟 50 km ＋ 到经棚 114 km。</div></div>
+</section>
+
+<!-- D3 -->
+<section class="day" id="d3" data-page-node-id="EF7zULihDdWBtEb14ZDYZ8">
+  <div class="dhd" data-page-node-id="pGmY79GHUVQhr1HUAGKd3H">
+    <div class="badge" data-page-node-id="Mruuwqrq1gr6QhpItSi9zv"><b data-page-node-id="3rGKfffneoEE5SRY58Vkv7">D3</b><span data-page-node-id="IMjSXrFPfStKB5yUJWJmGK">DAY</span></div>
+    <div class="tt" data-page-node-id="9Q4G1flFccBI7rD5m7KgGa">
+      <h2 data-page-node-id="ek0LrbX5e72MjelXz6Pa05">经棚 → 贡格尔草原 → 达里诺尔湖</h2>
+      <p class="dt" data-page-node-id="lsM34k4NrKgzENmAudPEG7">9/28 周一 · 全程最轻松的一天</p>
+    </div>
+  </div>
+  <ul class="chips" data-page-node-id="eD6DPsMNOgPy4gHqe06U2G">
+    <li class="key" data-page-node-id="WCRGRUuGTHJAVeR97MAHJp">约 90 km</li>
+    <li data-page-node-id="TifpTRECArq2sUYFzF9SR4">住 达里诺尔北岸民宿</li>
+    <li data-page-node-id="VxdQg3DNkCwraSOeZ8QkDq">走 G303 国道，不上高速</li>
+  </ul>
+
+  <div class="route" data-page-node-id="1Q5wtIzuTDSP0GboU3F0Tp">
+    <p class="rlabel" data-page-node-id="eCM5iCR48Jct5dGMp6nHUs">导航这样设</p>
+    <div class="rrow" data-page-node-id="iZUAw715CS3XQI2GGSt6ME"><span class="rdot" data-page-node-id="x2wmMrNTFBTF6YHBgUWtTw"></span><span class="rlab" data-page-node-id="MWFp2K92at7ipGiFPQFC17">起点</span><span class="rtx" data-page-node-id="hgL5oc38IhFPwAMPZ8ayyD">经棚镇</span></div>
+    <div class="rrow" data-page-node-id="wqoF7n0h5eWINCcHM3FDnT"><span class="rdot v" data-page-node-id="LsWFuf89RjUkP6NOJ21cNr"></span><span class="rlab" data-page-node-id="vmrNaHpDawS4XATAc6ZJei">途经</span><span class="rtx" data-page-node-id="TSFYhckRkMkUYTDKnH52HD">贡格尔草原 → 砧子山岩画（可选）→ 汽车充电站（达来诺日服务区）</span></div>
+    <div class="rrow" data-page-node-id="YxptNYgeYXoGnv1p8vLRSK"><span class="rdot e" data-page-node-id="RZDPuRoxeKi1gRNT5NDuGW"></span><span class="rlab" data-page-node-id="2LDvMdxVirGxo7VZPeu0F4">终点</span><span class="rtx" data-page-node-id="ohVvWchRNhdGGYQyKjO8un">达里诺尔湖北岸 <em data-page-node-id="pce56iqJ5t4TngwzObsxh4">（或直接搜你订的民宿名）</em></span></div>
+  </div>
+
+  <ol class="tl" data-page-node-id="hRpu7b2BaCNgGiDbtORSnA">
+    <li data-page-node-id="F83H62yqGTRxuHU15KSZAB"><span class="tm" data-page-node-id="obPzaGIMyFRj2VDtJlvo65">08:00</span><span class="tdot" data-page-node-id="5EGv0IudDdk8FBlosVmjcK"><i data-page-node-id="pHB9aTxHQ4DFNTy4WCRbcu"></i></span><span class="tx" data-page-node-id="zrIemVmrlw7FBFv4EajMYj"><b data-page-node-id="wvyENQaX7EHt3EsHqu6FT4">出发</b>。今天只有 90 km，不用赶。</span></li>
+    <li data-page-node-id="5MThgGC2PiE7n8P61AX0QP"><span class="tm" data-page-node-id="j1Yjp1AG8xzUecDmw8cF6p">08:30</span><span class="tdot" data-page-node-id="CnwVoarlhDu2PZ84SZVTsh"><i data-page-node-id="IbQdlAzhAMFAM31hJJ8z0T"></i></span><span class="tx" data-page-node-id="WbxcCPaT6701sdkoMDKLCe"><b data-page-node-id="bXPpP3eKZXia5IAmNEcAdp">贡格尔草原</b>：沿途羊群马群就在路边，随时停车拍照 —— 这段路本身就是景点。</span></li>
+    <li data-page-node-id="N1xZBXhQUZGgmr8fuK16d0"><span class="tm" data-page-node-id="Gogkb8EJog8ByM7CAkNBhF">10:00</span><span class="tdot" data-page-node-id="rCyleV8jkMLAKKpIi4SLvU"><i data-page-node-id="uvSDDRwFPkUDIEQzttECJX"></i></span><span class="tx" data-page-node-id="Kab7JOPz3w1S7ym2scIEb8"><b data-page-node-id="NIWnKUwe1ljyhFCpJT0P5Q">砧子山岩画</b>（可选，草原上少见的古代岩画）。</span></li>
+    <li data-page-node-id="SYhAdFSbJ1dnNs3nqEH1H6"><span class="tm" data-page-node-id="JaJbQK44fWDHX8vN0zNotN">10:40</span><span class="tdot" data-page-node-id="NZTaZ4XWQZEsg3FUAIiDLJ"><i data-page-node-id="XWYmah4tgzOBzsZDBEcjOS"></i></span><span class="tx" data-page-node-id="Kdwj8nd2wKyNalx8HyWZ9N">到<b data-page-node-id="UPs7imdLr6V0XTRqn0XgJw">达来诺日服务区充电，这次必须充满</b>。</span></li>
+    <li data-page-node-id="bDoESyD6RjF50dGlALMEb6"><span class="tm" data-page-node-id="XM0VEc61BAwHbFZ3eAYNWE">11:30</span><span class="tdot" data-page-node-id="ESsZrWC3DmyFSAylMBbGqB"><i data-page-node-id="IJJDNeLLq7OjLehKgaxJF3"></i></span><span class="tx" data-page-node-id="SNF8qCrDAtYHYzAqkniVPJ">到<b data-page-node-id="wBrTcHNI5CR0adh0YtdpjG">达里湖北岸</b>，午饭吃湖鱼（华子鱼、鲫鱼）。</span></li>
+    <li data-page-node-id="oxdkVXCRHTwQg4SG6ESRZI"><span class="tm" data-page-node-id="GiQUVdQgbJwGamx7cMdSCw">12:30</span><span class="tdot" data-page-node-id="7f2F83FN2u1IGO4kJ9pVzt"><i data-page-node-id="qw18FHE6V7lxZiEubszOEd"></i></span><span class="tx" data-page-node-id="O8rmFJe6f4UOBXSD5db3a9"><b data-page-node-id="mQuhFsEBo4XhmqY4JFqOiT">入住民宿，让孩子睡个午觉</b> —— 草原白天晒、早晚冷，中午休整一下很有必要。</span></li>
+    <li data-page-node-id="FafGbGobjbApWFz2hKt9DP"><span class="tm" data-page-node-id="KVwBLOl8ikHwjzuRcMEoFB">15:00</span><span class="tdot" data-page-node-id="yjncmcp6p3xcTB4ELMSHTN"><i data-page-node-id="VzjpngfGoJcDPZNNjvxpvp"></i></span><span class="tx" data-page-node-id="a6fkBv42xapBU87Ii0lKuY"><b data-page-node-id="Honpdv3YOkCE61rijdWnPT">北岸观鸟台</b>（9 月底正是候鸟南迁季）→ 曼陀山看湖全景。</span></li>
+    <li data-page-node-id="71i4Fh8WWcM8C7Uz8xRlGU"><span class="tm" data-page-node-id="YEtZVV7CAu9q6xRg0EvFdz">17:00</span><span class="tdot" data-page-node-id="Zc9RzlA5WFsJrmNuwC8jA2"><i data-page-node-id="mSlMene5MVbsybsPi9QPeO"></i></span><span class="tx" data-page-node-id="tBwBnp65F0HsExwqmN7Lmf">湖边玩水、捡石头。</span></li>
+    <li data-page-node-id="6vypCwzFBlkHSKMinE1OvL"><span class="tm" data-page-node-id="ewrUup3FHi7hPqMawaPAAS">17:30</span><span class="tdot" data-page-node-id="YTkym1hfniLKip8hMn7ZIq"><i data-page-node-id="P4ecMwoCmvstoQhIAupVWT"></i></span><span class="tx" data-page-node-id="sH4NO4MYt6FbOsLcxd1ipj"><b data-page-node-id="2UzwUrf9pn89mbGs7TSaMb">达里湖日落</b> —— 太阳落进湖里，这是达里湖最有名的一幕，别错过。18:30 晚饭。</span></li>
+    <li data-page-node-id="FUjn0b21Pa6etlPLBPrkwH"><span class="tm" data-page-node-id="n3AorTG2WJnJrZqK9FUutL">20:00</span><span class="tdot" data-page-node-id="qOe9TBoqHoxWCVIFvxYydm"><i data-page-node-id="NbRsJrXVIg3GnFInJ6bnvU"></i></span><span class="tx" data-page-node-id="EufDsWp9Uz1IlgTV8TtyMo">让民宿用 <b data-page-node-id="xquELxCipn573mdFUgUSrq">220V 给车慢充过夜</b>。</span></li>
+  </ol>
+
+  <div class="cl charge" data-page-node-id="QgrWotBrIgio2qWoRKoI1e"><span class="k" data-page-node-id="1Y9puihb5DSEl0J7VFPnnF">充电</span><div class="b" data-page-node-id="fxUGWh2G4GTGwXxJXUXi9y">达来诺日服务区就在 <b data-page-node-id="oFAguumNPgHiUq9oQbIztZ">G303 国道旁</b>（也是达达线南端起点），用「<b data-page-node-id="3f5YU9g193amBnj9wmkR6n">蒙马充电</b>」小程序扫码。<span class="no" data-page-node-id="OHRhXdCwjeM6LqsYR5DTkV">注意这一带一共 3 个充电站，其中 2 个在高速上</span>（要上高速才进得去），认准国道旁这一个。晚上慢充要提前问民宿有没有 220V 插座 —— 这类桩地图上基本搜不到，只能打电话问。</div></div>
+  <div class="cl info" data-page-node-id="woLYd5aXpZ8uNTOXAf4AkN"><span class="k" data-page-node-id="XM06RJxdym1F44g4zS9noU">门票</span><div class="b" data-page-node-id="IoY9719Fy0xxFcYlcqBIua">达里诺尔湖 <b data-page-node-id="TMOzqqxH7cU3gRCyDs1AVC">120 元/人</b>，自 2026 年 7 月 23 日起<b data-page-node-id="IgtJGvkmwtflDdsACiLMT6">南岸、北岸一票通用</b>，买一张两边都能进（儿童免票政策以现场公告为准）。停车：观鸟台、曼陀山、湖边都有停车区。</div></div>
+  <div class="cl tip" data-page-node-id="AUJyYICLOpIDBKL9wRKZNQ"><span class="k" data-page-node-id="Fro89AgQSJzPb0fAZLR7oJ">重点</span><div class="b" data-page-node-id="9DRL13bqgX3xL514oE0k9t"><b data-page-node-id="aRpnC5jMUEZ8B5BgTOIPD1">这一天的核心任务是攒电。</b>明天达达线 + 热阿线共 220 km，中途没有可靠快充，所以「白天在达来诺日充满 + 晚上民宿慢充」是双保险。万一民宿充不上也不致命，明天出发前绕回达来诺日再补一次就行（多跑 20–30 km）。</div></div>
+</section>
+
+<!-- D4 -->
+<section class="day" id="d4" data-page-node-id="r4gWH3H10IbxBPPZtuKfws">
+  <div class="dhd" data-page-node-id="KRPSGEpwLjcHuRh1qndqbO">
+    <div class="badge" data-page-node-id="M3b8BeAwjdNQgMJmj6VmlG"><b data-page-node-id="Afb7xUh7uRbVzegZLRxo52">D4</b><span data-page-node-id="NaIwsU9uElnGVfPKoM9pn4">DAY</span></div>
+    <div class="tt" data-page-node-id="y9d9VIBIYAAzEFOStAwZra">
+      <h2 data-page-node-id="c6ZBXBP4mb8of0pUNSwRUC">达里湖 →【达达线】→ 石林 →【热阿线】→ 热水塘</h2>
+      <p class="dt" data-page-node-id="s5NmiV1C9KQ7gYzaTFtdkY">9/29 周二 · 全程最精华的一天</p>
+    </div>
+  </div>
+  <ul class="chips" data-page-node-id="XlM02fVCSwHKEJHDx1lZXu">
+    <li class="key" data-page-node-id="Avh4Ok6nqtJQGUcsWqd6mr">约 220 km</li>
+    <li data-page-node-id="nEHG4S27FAdNkiwroEGeCb">住 热水塘街道 温泉酒店</li>
+    <li data-page-node-id="sbEh8GdhscgWHzK3G60jkt">达达线 135 km ＋ 热阿线 82 km</li>
+  </ul>
+
+  <p class="rlabel" data-page-node-id="HbFKOvEgtpnN2sYXZDTLk9">导航必须分两段设，千万别一次设终点</p>
+  <div class="route" data-page-node-id="d3AJBVHcTD5HFgp4DbuV9p">
+    <p class="rlabel tight" data-page-node-id="XKVF5RllDAUd4XQObBnVQH">第一段 · 达达线</p>
+    <div class="rrow" data-page-node-id="b8ZoRVrd6hwKQ7HmAAaL27"><span class="rdot" data-page-node-id="UPwHJcucOJW7TYjiAJZ9uW"></span><span class="rlab" data-page-node-id="GGFXxApSmj5ynzdeEFl0L3">起点</span><span class="rtx" data-page-node-id="ki5g4vPkKwnhs4XunoAaEF">你住的达里湖北岸民宿</span></div>
+    <div class="rrow" data-page-node-id="6Cfs4Uvf0XAoV7EugijRbO"><span class="rdot v" data-page-node-id="IzT1IMpylk1Ahs4OCv62WP"></span><span class="rlab" data-page-node-id="HrA7Z6T5wYG37R7ZNMvbeF">途经</span><span class="rtx" data-page-node-id="uwAhdfqahAq15vDxeRangS">白音敖包沙地云杉景区 → 巴彦查干苏木人民政府</span></div>
+    <div class="rrow" data-page-node-id="g9toNnK39Amh4pt6WoyCYj"><span class="rdot e" data-page-node-id="bGGcrN7tbG8v20g7wpnLdO"></span><span class="rlab" data-page-node-id="1n4Pih19Y2I6IPLtZtqeYv">终点</span><span class="rtx" data-page-node-id="9GlVkXtcZBtKeaa3PZEbeb"><b data-page-node-id="wMO2WgIZFGiUDzQrfZ5TAz">阿斯哈图石林景区西门</b></span></div>
+  </div>
+  <div class="route" data-page-node-id="IZbBA7s0b6QZ4PqJRQnQYX">
+    <p class="rlabel tight" data-page-node-id="4etDcgZoDKi0u9Lio5F6Fk">第二段 · 热阿线</p>
+    <div class="rrow" data-page-node-id="PYsmrIDjHLkhwnXBIa63wg"><span class="rdot" data-page-node-id="Us0Zrqvl8HtvF61YbDLiu8"></span><span class="rlab" data-page-node-id="tV5fNpP5U2g8d6rTQlwjr2">起点</span><span class="rtx" data-page-node-id="2vigsgSxDXpUzefcsl2ZvS"><b data-page-node-id="c98C40TlkmwYXSClk7PGNy">阿斯哈图石林景区南门</b></span></div>
+    <div class="rrow" data-page-node-id="yYzYiytfDBqzdJjEkA1ELN"><span class="rdot v" data-page-node-id="HyCRxVSckaB2mXXaKiHPKz"></span><span class="rlab" data-page-node-id="jBqlUPpcO8ynlfbbEFPZHc">途经</span><span class="rtx" data-page-node-id="tQ9pFpO2gIlvsTuZzSlJrV">黄岗梁国家森林公园 → 很黑村</span></div>
+    <div class="rrow" data-page-node-id="xrM3cavASzCBsHIOKPz6rt"><span class="rdot e" data-page-node-id="a0v0pOWF6gUNBx1hboC9oo"></span><span class="rlab" data-page-node-id="W7O0Es3Vmq2xdHaIA4xfpq">终点</span><span class="rtx" data-page-node-id="SaZyI73jBr2s6HwKFK8OEz">热水塘街道</span></div>
+  </div>
+
+  <ol class="tl" data-page-node-id="QsYPkvBVmXeGHSsxH2AmO1">
+    <li data-page-node-id="rSm5nPshebiyqu1YDZtmCb"><span class="tm" data-page-node-id="h6sebuINYgCRegK5JTm3Av">07:00</span><span class="tdot" data-page-node-id="FVvQB57GhifJW3ltDHaxqn"><i data-page-node-id="TacVTxqGb3B94XANp5juyT"></i></span><span class="tx" data-page-node-id="7p1XRQLHwdS6nPHKiW4yeO"><b data-page-node-id="efgiXILgGDog4nqCGcbIEC">出发</b>（出发时电量不低于 90%）。今天不绕路、不加景点。</span></li>
+    <li data-page-node-id="KDFJSGKbYrSVkBIaBbvF72"><span class="tm" data-page-node-id="8hHMAVGMQt0YuDgkDvIOYv">07:40</span><span class="tdot" data-page-node-id="2JKjqLwRiCOWGsssFisbES"><i data-page-node-id="ok2tPlwf7SiDDybZNawxSq"></i></span><span class="tx" data-page-node-id="jE0D7MSRFJAGGHDGexqTIT"><b data-page-node-id="O9D88lh03rb1aDgFAODIyp">达达线前段</b>：贡格尔草原深处，笔直的草原公路直通天际 —— 这就是「中国最美草原公路」的招牌画面。</span></li>
+    <li data-page-node-id="J6P9MHQlscC4QbM3iYoPqL"><span class="tm" data-page-node-id="Sp7lqz74Wi9ui66s4HqeNN">08:30</span><span class="tdot" data-page-node-id="kyZIiSa5E5IadjfdWbQhVL"><i data-page-node-id="TVVkJsmMSOYuMB4Ueed1A4"></i></span><span class="tx" data-page-node-id="XR0WFlbFcYs9OiHIBoyTOa"><b data-page-node-id="cYFhfGTCh0mqZaSQ6y0aLm">白音敖包</b>：世界唯一的沙地云杉林，草原上突然出现一片云杉，很特别；这里也是达达线上唯一的补给点（有停车场、卫生间、小商店），<b data-page-node-id="etiG8CR1z3kn7CBYh9YbCN">只停车休息、不进景区是免费的</b>，进景区约 45–50 元/人。</span></li>
+    <li data-page-node-id="9SYSGakQZZcLAMApBxFbpS"><span class="tm" data-page-node-id="lELPsWOE4UFaiSieJ31GZf">09:30</span><span class="tdot" data-page-node-id="wAkilnFDvkjaMozURgEtdT"><i data-page-node-id="IsNqxVLdgypNtpiGz2yQQu"></i></span><span class="tx" data-page-node-id="ygv8UkJ6DdMvue036FOAfU">过<b data-page-node-id="G23RNEyrAk6XedYFYl8d6N">巴彦查干苏木</b>，继续往阿斯哈图石林（达达线终点，全程约 135 km）。</span></li>
+    <li data-page-node-id="aSnJIPCKCzknCmEeLAFRcK"><span class="tm" data-page-node-id="MZgFnFxidupPB7CEStZXZF">10:30</span><span class="tdot" data-page-node-id="4xQPPnw9WAK562SLgcJ12A"><i data-page-node-id="cnkAHhPEhhF4PX8os0yBDp"></i></span><span class="tx" data-page-node-id="N8BChybe0p99f1YLIGWHYS">到<b data-page-node-id="t8rRVY4AMnSQWwISh6nMNl">阿斯哈图石林</b>：门票 120 元/人 + 观光车 40 元/人（联票 160 元/人），景区很大必须坐观光车，四个园区游完约 2.5 小时；冰川融水冲蚀出的「冰石林」，孩子会当成巨型积木。13:00 景区外午饭。</span></li>
+    <li data-page-node-id="zKJg0IP58P8ON7lQJUNYzp"><span class="tm" data-page-node-id="Y7T9U8FYFFKhatkhFu40BJ">14:00</span><span class="tdot" data-page-node-id="GEAlOsyHpou0JXmhMg8ARi"><i data-page-node-id="VM9w3QZKknasU2AJiK1xrF"></i></span><span class="tx" data-page-node-id="Er5JAPQmFAqanBzu5vAOOg">上<b data-page-node-id="KWSXJn4pW9NCHwiRUgSgqy">热阿线</b>：阿斯哈图 → 黄岗梁 → 热水塘，82 km，翻黄岗梁（海拔约 2000 m），10 月初落叶松金黄，是热阿线最好看的一段。</span></li>
+    <li data-page-node-id="aeROuUQdxN4r9zYZU39Aix"><span class="tm" data-page-node-id="OwxVTNjwmEkazc60sWBm3j">16:00</span><span class="tdot" data-page-node-id="TRjpDhE1779q8RyJLJWdVg"><i data-page-node-id="2it9Syg48jhNgbpwfxQWiC"></i></span><span class="tx" data-page-node-id="7tjl8YW3Em6nHLzXSF6GWj">到<b data-page-node-id="wrWt8O104CEpvDvDMNNtHq">热水塘温泉镇办入住</b>；16:30 泡温泉（天然热水，泡完一路开车的疲惫全卸掉）；18:30 晚饭。</span></li>
+    <li data-page-node-id="AYX1ac7FbaWdk7dZtYBXNY"><span class="tm wide" data-page-node-id="hRHxCAsYCLSt8oJ3G6qGUa">晚间</span><span class="tdot" data-page-node-id="ScyDZBjATrioLC24OSBDva"><i data-page-node-id="dx5FhIxldXcvi49uEZ0rL1"></i></span><span class="tx" data-page-node-id="D6eTyItCVb0qOkfLqeVzQG">在热水塘镇<b data-page-node-id="1zo5iaoptLmwRhMAeXCxND">充电，这次必须充满</b>。</span></li>
+  </ol>
+
+  <div class="cl charge" data-page-node-id="l2sSziiHfkJrMQ7ak8NnAZ"><span class="k" data-page-node-id="OzBEafd5kDPVjOZWBiafEU">充电</span><div class="b" data-page-node-id="dYZgtOXefKkoJp4S9CVrzX">镇上有<b data-page-node-id="tJIhgWteyshDNJOapVFpjp">两个蔚来快充站</b>，用蔚来「加电」App 扫码、非蔚来车也能充，<span class="no" data-page-node-id="WJtsK7Lh51AKaFVlmehdLQ">注意只能充到 95%</span>；备选阿斯哈图石林景区停车场（桩少、容易被占，先打电话）。</div></div>
+  <div class="cl warn" data-page-node-id="4diqtfCwHNOmTldIAEFIgN"><span class="k" data-page-node-id="3oygHoBZMWGXBdWrvt9sCp">铁律</span><div class="b" data-page-node-id="o4AIDfmtj6eeVmiACRQxL7">这一天的三条铁律：<ul data-page-node-id="USH4J3OKeZyQcNzGdCANg0">
+    <li data-page-node-id="EiAvUeMpHHjePhDDFRB9eW">千万别把终点一次性设成「热水塘」—— 高德会直接走 G306 / 高速，达达线和热阿线整段跳过，等于白来；</li>
+    <li data-page-node-id="KS94i1bCzdLTJBLbd8DjnB">阿斯哈图石林有<b data-page-node-id="M1s1cT12PUi2MNPrp2Vzq7">西门、南门、东门三个门</b>，达达线接的是西门、热阿线接的是南门，搜「阿斯哈图石林」默认给的门不一定对，<b data-page-node-id="lNq0vCBKanXbKriQQe7mhU">务必手动点选「西门」</b>；</li>
+    <li data-page-node-id="Hs0dgcF7lraCGfzM3ixXvS">热阿线弯多坡陡、限速 40–60 km/h，部分路段<b data-page-node-id="oRQdpMxloLhGRHCrxNQ6fQ">限高 2.2 m</b>（车顶行李箱要留意），比达达线难开，时间留够。</li>
+  </ul></div></div>
+  <div class="cl info" data-page-node-id="706zCmZB2WNLQSJYsiDZ5m"><span class="k" data-page-node-id="Os5mdVFFgtKezu8EuX4aGz">停车</span><div class="b" data-page-node-id="28Ok2sJ4Qgp1ZZW0eoL7kz">石林西门、南门都有大停车场。</div></div>
+  <div class="cl tip" data-page-node-id="2gBrTjGUBq97MpuIP3ECeb"><span class="k" data-page-node-id="rAmgY3xMx9xtqziJcvQahm">注意</span><div class="b" data-page-node-id="M4cEDKwhxsu9B5baCXhNmJ">草原手机信号差，出发前在高德里下载「赤峰市」离线地图 —— 达达线、热阿线沿途<b data-page-node-id="DsreMNe5iVMJnKRPCJIHFS">没有任何加油站和充电桩</b>。</div></div>
+</section>
+
+<!-- D5 -->
+<section class="day" id="d5" data-page-node-id="C2fRQ8xJhHhfDCzIUFyaqA">
+  <div class="dhd" data-page-node-id="bePk4lkEIDB3TkpaBDGkuC">
+    <div class="badge" data-page-node-id="FzLhnX1Hl0HOyA8DX6el4m"><b data-page-node-id="u1szCiLGJPE0837DGAiU2L">D5</b><span data-page-node-id="rdNWXBXVGKMfvB81m8oqXF">DAY</span></div>
+    <div class="tt" data-page-node-id="3HFMcrqzfsGUrKR2A9S8aK">
+      <h2 data-page-node-id="d1ZrXDDBEHzedRt87EzUvs">热水塘 → 林西 → 赤峰 → 朝阳</h2>
+      <p class="dt" data-page-node-id="GxyI36zlV24tuhwFt3yu7Y">9/30 周三 · 全程最长的一天</p>
+    </div>
+  </div>
+  <ul class="chips" data-page-node-id="OukAgAsOaX0DbOGi3Qt89I">
+    <li class="key" data-page-node-id="L4lXBbxkHICDmzAfdvIX1k">约 440 km</li>
+    <li data-page-node-id="Z2AkShbBUa3TA0sDBSsCJA">住 朝阳市区</li>
+    <li data-page-node-id="GH5Fk4f3vB5jD1aq6NzGZ7">过路费约 90 元</li>
+  </ul>
+
+  <div class="route" data-page-node-id="GDneuDyuVsPDLfQhusbxSw">
+    <p class="rlabel" data-page-node-id="BqwQC6lSeZbfQgGg1DNN4s">导航这样设</p>
+    <div class="rrow" data-page-node-id="XYmeoNu0BVpY9GtDiOpsRr"><span class="rdot" data-page-node-id="HhblJ0MslNSBkGcpSTr7bY"></span><span class="rlab" data-page-node-id="cimFHnXJNSMJHUppdEM4Qz">起点</span><span class="rtx" data-page-node-id="rI6jzo1gD1XDQelQoMt7wV">热水塘街道</span></div>
+    <div class="rrow" data-page-node-id="UdsIEAmwcyShZdjiuWENGA"><span class="rdot v" data-page-node-id="oRSt8BgIFUFzZQegIN6o6O"></span><span class="rlab" data-page-node-id="3b010wSqgWanf1fwConbeA">途经</span><span class="rtx" data-page-node-id="gIe3TD9VMM1zfy7slCR44N">林西县 → 赤峰市</span></div>
+    <div class="rrow" data-page-node-id="YRDqlGmclZpBchannUzmqH"><span class="rdot e" data-page-node-id="Q34xxRG2WUVDVFEZ41rIAf"></span><span class="rlab" data-page-node-id="wPYBmSKoXlkS09YwA4iCnX">终点</span><span class="rtx" data-page-node-id="9x7gAqWSYC0rCeVATvHq1Y">辽宁朝阳鸟化石国家地质公园</span></div>
+    <p class="rwarn" data-page-node-id="RBLbRhqA8Z6QGXpwMCqy4P">建议直接走高速（丹锡 / 京哈），省 1 个多小时。</p>
+  </div>
+
+  <ol class="tl" data-page-node-id="12ByG91m0bCZms7onBLiHU">
+    <li data-page-node-id="BlYBNHSQgL6vlz86mfsvpD"><span class="tm" data-page-node-id="1blbgb2UnXtWDRQHqxkCjT">06:30</span><span class="tdot" data-page-node-id="q18RVbWDIyvFwH3ZnQCNzR"><i data-page-node-id="rh7ogY5lQHlbFEmGekDLXQ"></i></span><span class="tx" data-page-node-id="91cvsU13RhapspuXeVrIdB"><b data-page-node-id="RKTPYdKLZxOtfJOUjA6D8m">必须早出发。</b>440 km 是全程最长的一天，早走才有时间玩朝阳。</span></li>
+    <li data-page-node-id="fETC6FFlmEFZYSBrZAxRLb"><span class="tm" data-page-node-id="K9UgAYisW7xs8CCxkNLTMq">08:00</span><span class="tdot" data-page-node-id="3IIbKZYDaFzeSRGaG4asb6"><i data-page-node-id="TT5r2FfFQSyj4MYdXgCtFU"></i></span><span class="tx" data-page-node-id="FvhOjR1xlWrE4o5Z4sFhE8">到<b data-page-node-id="3tSqtZXRYE5mPc7K4Fj50x">林西县</b>（约 110 km）充电 20 分钟。</span></li>
+    <li data-page-node-id="265FIuwMauWEXF1CM1ns4G"><span class="tm" data-page-node-id="Dq0bN5hLA42FQ9wluyoRC1">10:00</span><span class="tdot" data-page-node-id="YEmNPrst59DGhdCGhN8JDY"><i data-page-node-id="SlRKXvxV7GnPAtEDprvyGT"></i></span><span class="tx" data-page-node-id="8AFqTQ5sbLTEl6yE71ngHp">到<b data-page-node-id="cb5dSf8xtv4fUStax0vgjJ">赤峰市</b>（约 150 km）。</span></li>
+    <li data-page-node-id="3eVCeNowobFDy2XUZvBnDc"><span class="tm" data-page-node-id="bJEARCTRtRxKfRZ994F3Hh">10:10</span><span class="tdot" data-page-node-id="8cNZsAR9t6rCcCr9Jt0mHh"><i data-page-node-id="qb2zsiFCAA4WqqD1htDb51"></i></span><span class="tx" data-page-node-id="MDO5M5DWGDMXPD7JlaGdCT"><b data-page-node-id="ZAHoUCrH85SAAZRIV6EhPZ">赤峰博物馆</b>（免费，1 小时）：红山文化、中华第一龙（C 形玉龙）就在这里，<span class="no" data-page-node-id="7YefEnNWJKHWA8qpASZ7hF">需要提前在公众号预约</span>。</span></li>
+    <li data-page-node-id="ASBHnj7TInAbtYsE19zz5i"><span class="tm" data-page-node-id="soGzCE56bN0B89XN8Ba9IW">11:15</span><span class="tdot" data-page-node-id="94iN1MkpOzRK4TwZGHaFIp"><i data-page-node-id="eEIn9uRrC5OFtGAf3juq5j"></i></span><span class="tx" data-page-node-id="wCDLig0KeSN66K7aUQAKZn">赤峰午饭。</span></li>
+    <li data-page-node-id="BfeVdMYQXoD27noFKHG1Ih"><span class="tm" data-page-node-id="LGuAGEsrThfzu5VX0PrufH">12:00</span><span class="tdot" data-page-node-id="vwb9pMwEY6ypHSWpH4ylvB"><i data-page-node-id="yJOQC9IpuhhtxB0LeCm8Nj"></i></span><span class="tx" data-page-node-id="AqgVU18Ia8kqSaVSojasce">在赤峰<b data-page-node-id="IURoADDg2mv50KRu8gGlQL">必须充满电</b>。</span></li>
+    <li data-page-node-id="ETHYTbAG7SnNMpVm33vVZn"><span class="tm" data-page-node-id="3JZlLK7apllTIvegktaIRA">12:30</span><span class="tdot" data-page-node-id="mE2mAg0bWCDsPzPsU3qskL"><i data-page-node-id="4ungGJvCa0eXyqy2OsVOXC"></i></span><span class="tx" data-page-node-id="NQPqW38lbZjMajwD1ykgtu">出发去朝阳。</span></li>
+    <li data-page-node-id="fTAaQJM8JrIlPBjw3njn4C"><span class="tm" data-page-node-id="sJl35EHQsaH61qzZlNRN3y">15:00</span><span class="tdot" data-page-node-id="BU2tzxlRB8dOEfxwmMTPMd"><i data-page-node-id="bptV56QPQJTwBcvSGXQ8JN"></i></span><span class="tx" data-page-node-id="ypCszXde7QLXmivXDxkLpM"><b data-page-node-id="vmD5gTo0p2bBIHCjNeAb2P">朝阳鸟化石国家地质公园</b>：门票 60–80 元/人，1.3 m 以下免票，看「中华龙鸟」化石和整面化石墙，这是全程孩子最喜欢的科普点，约 2 小时。</span></li>
+    <li data-page-node-id="jXl1GWLcPoi82bEemrALD2"><span class="tm" data-page-node-id="byC2Ec7ZHNgFerWtbqfxiW">17:00</span><span class="tdot" data-page-node-id="h0kUARDG33nyyyJKebP2LT"><i data-page-node-id="NNjjRPzvgHWs4IpS17Htui"></i></span><span class="tx" data-page-node-id="aKHPDduSILpcUf5JC4W4Mq"><b data-page-node-id="bPyOUBv3ipvsz5xrFMwBm6">入住朝阳、晚饭</b>（朝阳的羊汤、炖肉、碗砣都是本地味）。</span></li>
+  </ol>
+
+  <div class="cl charge" data-page-node-id="ezuWyQMyL6W0ZWr6kfmVf3"><span class="k" data-page-node-id="cPKD61SY9TpXgBD8niNrcp">充电</span><div class="b" data-page-node-id="6jQcM2ypT7Uopw8PHnbc95"><b data-page-node-id="QcMqyLWORz8SiYI4pzrfdr">林西</b>：林西北方商贸物流园充换电站（县城边上，好停好找），也可用高德搜「林西 充电站」挑最近的。<br data-page-node-id="iVEqWZDAnYFqvpZWdnZgQH"><b data-page-node-id="n3FDGEACbxA80wKSZVamFi">赤峰</b>：开迈斯充电站（红山区玉龙汽贸路 001 号，一汽大众 4S 店内，4 个直流，约 1.4 元/度，停车免费），国网、特来电也都有。赤峰是今天唯一理想的中途补能点，往后到朝阳还有约 180 km，别指望路上有桩。</div></div>
+  <div class="cl info" data-page-node-id="sVtN4qfdaTNPaXXUvJjxgi"><span class="k" data-page-node-id="Zo1SSLGl6vRGOONC3Nd1L3">停车</span><div class="b" data-page-node-id="2AL15lvJh4mPyk62eiBQra">博物馆、鸟化石公园都有停车场。赤峰博物馆周一闭馆（9/30 是周三，正常开），但必须提前预约。</div></div>
+</section>
+
+<!-- D6 -->
+<section class="day" id="d6" data-page-node-id="MPPOVFCAWYclx6DD53pXYz">
+  <div class="dhd" data-page-node-id="RORSgFTvHBAC7YqRzXKtRr">
+    <div class="badge" data-page-node-id="0MPHWhBRoDukaxaIIEI2Zc"><b data-page-node-id="Kb6DIZueDhX2OIG84DEmyo">D6</b><span data-page-node-id="f3pUSbJbqfSDsZo3W8fRla">DAY</span></div>
+    <div class="tt" data-page-node-id="QYIwYI8xUasptTeIVuI83Z">
+      <h2 data-page-node-id="wMB1lqTLSbEutybcsAPJz2">朝阳 → 锦州 → 兴城 → 山海关 → 北戴河</h2>
+      <p class="dt" data-page-node-id="qRfGPTx5kEMKPLX4xLTidN">10/1 周四 · 国庆首日，高速免费</p>
+    </div>
+  </div>
+  <ul class="chips" data-page-node-id="plWJHOjIC1kI9Zd70mFiVn">
+    <li class="key" data-page-node-id="3C3EaTDZKbDKZCpVANNEsn">约 335 km</li>
+    <li data-page-node-id="O8xtV9rpHjKs4LCtKAcWD5">住 北戴河区</li>
+    <li data-page-node-id="4eIcFBE9KEvU3uJGKvV6Ww">傍晚赶海 · 今天不赶时间</li>
+  </ul>
+
+  <div class="route" data-page-node-id="TjcV9R6P7Uj3rBzeEbYJX0">
+    <p class="rlabel" data-page-node-id="qLFgiMtB1X04nPhRcNCW0A">导航这样设</p>
+    <div class="rrow" data-page-node-id="E0a2yRxTgb1D38MH5AnfWM"><span class="rdot" data-page-node-id="PZDO7QntEGKDWDjKUzbygp"></span><span class="rlab" data-page-node-id="YDftnvB9ctIeGOEBDoDmYg">起点</span><span class="rtx" data-page-node-id="6TIFE0GFZCGioUCkG0wpIl">辽宁朝阳鸟化石国家地质公园</span></div>
+    <div class="rrow" data-page-node-id="DVxSSNGgiMjIbjJFGsJ5yc"><span class="rdot v" data-page-node-id="Oz3ncxQVqfhcQlzsc8eHrB"></span><span class="rlab" data-page-node-id="UELmIFO0uOX0Xp4KCDjplA">途经</span><span class="rtx" data-page-node-id="Thd8QSDnagDhDUQLsHnUM8">凌海服务区 → 兴城市 → 万象市场 → 兴城古城 → 山海关景区·老龙头</span></div>
+    <div class="rrow" data-page-node-id="wfqgVBqhdCbURnM7vnnUnU"><span class="rdot e" data-page-node-id="1NpCblsafqfB7Qr2xOgR6Q"></span><span class="rlab" data-page-node-id="A59GglNaIIcCjovDuLozuO">终点</span><span class="rtx" data-page-node-id="A8J5i5JVJCDIupjBXM6sQz">北戴河浅水湾沙滩 <em data-page-node-id="ciqfemjK9dC3J3yfvMrcN9">（或你订的民宿）</em></span></div>
+  </div>
+
+  <ol class="tl" data-page-node-id="BaZkD4we7HklhaS97zllYn">
+    <li data-page-node-id="qHgud8ZlU0Aitj0U8PQwiL"><span class="tm" data-page-node-id="ncJcpd1ABRvi9BRxlH57KE">07:30</span><span class="tdot" data-page-node-id="LB7NdUolTztD4ZFfDvyear"><i data-page-node-id="zRfGGnjAbmijO6dP6OdCpS"></i></span><span class="tx" data-page-node-id="FPRX4qqmzni2neYlUHvLg2"><b data-page-node-id="zD5kvTGRTaWq3Y1fD2c2vJ">出发</b>，全程高速免费。</span></li>
+    <li data-page-node-id="9z4XstpcpmRKXB4Njbx1mL"><span class="tm" data-page-node-id="44L17FrCsneDCmTNIBTwgU">09:30</span><span class="tdot" data-page-node-id="O19EbQ2qt98boo3V5iLAYb"><i data-page-node-id="kN0tcnG0uGV0En1mgKQQmZ"></i></span><span class="tx" data-page-node-id="2wTAuTCDcAqEwAGQtTEBYb">过<b data-page-node-id="WDFeAga75cLPhKHpsBIzEi">锦州</b>（约 100 km），不进市区，在服务区休息一下。京哈高速沿线服务区（凌海、塔山、兴城）基本都有国网快充，想补就补。</span></li>
+    <li data-page-node-id="f95LGfDiHsuK7XcC0sHD11"><span class="tm" data-page-node-id="1og3o3gOgEEfFWymYmWQTU">11:00</span><span class="tdot" data-page-node-id="5QvNRXOTwOMvSsQySF8eoJ"><i data-page-node-id="LYQzp302u6ZSb2fzeLKR9L"></i></span><span class="tx" data-page-node-id="Dp9QzXIxYKMFnV04UhD0DH">到<b data-page-node-id="HSDQKBEY1SmPTpqroWCr6p">兴城</b>（约 80 km）。</span></li>
+    <li data-page-node-id="d0izvqCnkW2FrhLS8ttzlW"><span class="tm" data-page-node-id="BDAGPdsm13rX026BzpsZYg">11:05</span><span class="tdot" data-page-node-id="36xOeKhPwsef0l9vV94CFu"><i data-page-node-id="hVM4sYHHWFwI3HfaDfgdKs"></i></span><span class="tx" data-page-node-id="P3MpgkwnbwKm9CPrRrw01z"><b data-page-node-id="HmTbnpBvJGZHLOhjJwUNKF">兴城古城</b>：明代方形卫城，街区免费、登城墙 25 元，带孩子走一圈青石板路 40 分钟够。</span></li>
+    <li data-page-node-id="A8pAo5WsIRK2K6SPtepbjb"><span class="tm" data-page-node-id="YgcMnT7lM4pxw3pfDpAEuK">11:45</span><span class="tdot" data-page-node-id="S5LQ6NYc0VJaR2Esh0Hvml"><i data-page-node-id="O7hTEjdC2V0JiwBzEoDL71"></i></span><span class="tx" data-page-node-id="4bGUZRW5jTvF9OCHJJU2DH">到「<b data-page-node-id="QLjb4MJ4O138p97Xxr1bzW">万象市场</b>」买海鲜 + 旁边小店加工吃午饭 —— 同样品质的皮皮虾和螃蟹，这里比北戴河便宜两三成，人均 50–70 元。</span></li>
+    <li data-page-node-id="afbLCx2nCs7Fn1LyEnCdEE"><span class="tm" data-page-node-id="1c3cG2nhqRwA67M9psCUrm">13:00</span><span class="tdot" data-page-node-id="4WaFBbaw5rQiBF31L8ykLU"><i data-page-node-id="PXLEu1fNrCyE2fKGFHGbWQ"></i></span><span class="tx" data-page-node-id="7pgXR59wBy0MBFzeqIo6tt">出发去山海关（约 110 km）。</span></li>
+    <li data-page-node-id="EfMOvH9AEKdWl54unCcO4f"><span class="tm" data-page-node-id="CvEPpTDZhBa2OTbv3pH4hE">14:30</span><span class="tdot" data-page-node-id="eDdqLxQaq1iyuxtefIvD4F"><i data-page-node-id="UKsWK2Ephonvrv0Z0T9tXh"></i></span><span class="tx" data-page-node-id="6phGdTxZ38PZpvkiM7kOP0"><b data-page-node-id="CPvTdyk9lmJ4cMDjkxx38t">老龙头</b>：长城入海处，门票 50 元/人（与天下第一关联票 80 元更划算），让孩子站在长城上看海，是这一趟最直观的「山河」课，约 1.5 小时。</span></li>
+    <li data-page-node-id="bEZqrClA4slSl2CwZIyqtf"><span class="tm" data-page-node-id="AolmmAXxvPLErpgmVqlVY0">16:00</span><span class="tdot" data-page-node-id="53y3Fbrqj2cQxEaTy7dr31"><i data-page-node-id="oMKeGjGxo1hxiSYcIH8hP6"></i></span><span class="tx" data-page-node-id="rXEaTLHKWS9SoThBNYZQwS">出发去北戴河（约 40 km），16:30 到、办入住。</span></li>
+    <li data-page-node-id="68RnlBOv9TiFTONW43V72n"><span class="tm" data-page-node-id="4lwoG5tdx1UDD4cB3dQEyZ">17:00</span><span class="tdot" data-page-node-id="wNXlcgyGGov1reB2sXeXcq"><i data-page-node-id="kl3QyPvRTgFz228QcBSlFb"></i></span><span class="tx" data-page-node-id="zWwzu9A5QXLPuQ7Loo5Sy7"><b data-page-node-id="rUKLw24urmZkTfIJMCliiS">赶海</b> —— 今天最佳窗口 <b data-page-node-id="Aum7YW3mXfigPnB78VZjSN">16:30–20:30</b>，低潮 20:26、潮高仅 0.5 m，滩涂退得最远。首选<b data-page-node-id="VhpTpdbyqe7XxSO2Y8iEgw">鸽子窝海滩</b>或<b data-page-node-id="WtWAwE9bFMuV4XYfSuZAQ0">浅水湾北侧滩涂</b>。</span></li>
+    <li data-page-node-id="J5R8sOowFJBqFLBqCLqWMX"><span class="tm" data-page-node-id="uOa5KuHeJooV1cNvM8hd9b">19:30</span><span class="tdot" data-page-node-id="q12qo42FLjxAgwsFOGH2rp"><i data-page-node-id="eCFBryYNIDcsV6F01nlFA9"></i></span><span class="tx" data-page-node-id="wFa81Ltv6AlvGuxCmDhDxH"><b data-page-node-id="n0upANy7nx0dbS0YTHwJ6f">石塘路市场</b>买海鲜 + 加工店晚饭，人均 60–80 元。晚饭后把车充上（酒店 220V 或市区快充）。</span></li>
+  </ol>
+
+  <div class="cl warn" data-page-node-id="Qgj8JRzbHchrCiIogM3sFF"><span class="k" data-page-node-id="YMSw7BmBhzCfdPSSOuLS28">名称坑</span><div class="b" data-page-node-id="GCKIo07eCX5bEeFO3Trjmd"><b data-page-node-id="FOnzXidWSjhAjzV2MddrZJ">辽宁没有「锦州服务区」</b>，锦州附近要搜「<b data-page-node-id="bkfd8WHuFCWDkzLZHgxIHx">凌海服务区</b>」（京哈高速 472 km 处、锦朝高速汇入点，辽宁体量最大的服务区，桩最多，还有星巴克和肯德基）。<br data-page-node-id="adqpdq7IDmtOvFb9Hbw2KO">高德搜「<b data-page-node-id="ZBC080g2i8LDnGoFFMmES7">万象市场</b>」—— 没有「兴城海鲜市场」这个地点。</div></div>
+  <div class="cl warn" data-page-node-id="nFKyDXVv6EujpTHSUl9WiB"><span class="k" data-page-node-id="rxSax72LuqzmdCAdzsZ7de">赶海装备</span><div class="b" data-page-node-id="cqhRVnwRAFIgtpM4cp6Kra">务必穿<b data-page-node-id="6BPPAAFwsASSlXKQhviqgW">防滑涉水鞋 / 洞洞鞋</b>（别穿拖鞋，滩涂里贝壳会割脚），<b data-page-node-id="andChcFEamPURqn8cgCEDA">一定带头灯或手电</b>（后半程要摸黑，孩子反而最兴奋）。</div></div>
+  <div class="cl info" data-page-node-id="60OJWPg8JQpjPuuCy8K41s"><span class="k" data-page-node-id="B8OU0AcpURp6IyKtL3sTwy">停车</span><div class="b" data-page-node-id="bDbkKoAyUYHOUltTK1lK3i">兴城古城、老龙头、北戴河各景点都有停车场。</div></div>
+  <div class="cl info" data-page-node-id="a2NKGgl3gpQ6Z9WBmovFx6"><span class="k" data-page-node-id="oq5Q6Ir7TQgJepetWrx5ih">堵车</span><div class="b" data-page-node-id="L0VIbv91PZtzOw152H19Kr">10/1 堵的是北京往东北方向，你走的是反向，基本不堵；只是京哈高速山海关段大车多，跟车留足距离。</div></div>
+  <div class="cl tip" data-page-node-id="LfVxAGwCKZqmw2Cvy9FDpA"><span class="k" data-page-node-id="TQeR97RYKfkgFexaScKmWE">充电</span><div class="b" data-page-node-id="hUTHEhJv6IUQKpxtzcm7Wf">明天回京约 <b data-page-node-id="OuCbFcDg7PzF8M2IWt8ORE">310 km</b>，按保守续航 280 km 估余量不足，<b data-page-node-id="qzaf2fAs1VKhBDBrPlJb5N">明天建议在迁安或玉田服务区补 15 分钟</b>。</div></div>
+  <div class="cl tip" data-page-node-id="0JgUladRbFXWXFzi9oc92N"><span class="k" data-page-node-id="GeKpfcl7nr0E3UZaPzHAid">砍行程</span><div class="b" data-page-node-id="BtRmdbDRnEbr2njcjRJyug">时间紧了按这个顺序砍：先砍<b data-page-node-id="4oqnpidy2kGj0TnmzX78E1">兴城古城</b>（街区本来就免费，逛不逛都行），再砍<b data-page-node-id="6P5dLkPU9ty5K0MmVJERDP">老龙头</b> —— 但<b data-page-node-id="DwygKHA0lQhVcrRnDPBQCu">赶海别砍</b>，今天错过就要等 10/2 晚上了。</div></div>
+</section>
+
+<!-- D7 -->
+<section class="day" id="d7" data-page-node-id="gl0yhFUNYRivt0RziJqixL">
+  <div class="dhd" data-page-node-id="h8TDKies9I73mQvjUMCa07">
+    <div class="badge" data-page-node-id="E9m5BuIo1duJOkvVYCcVer"><b data-page-node-id="DZfzVfUcLNV5vkFb0mZa1O">D7</b><span data-page-node-id="3HVvtwyGUpKXs88qjGgkAR">DAY</span></div>
+    <div class="tt" data-page-node-id="XKmT843SD69iOa2e53HlSX">
+      <h2 data-page-node-id="69Yje8gyePbllXftFAdtuD">北戴河玩沙 → 回北京</h2>
+      <p class="dt" data-page-node-id="e3lgdNUAFfVEbd1ODlAd4p">10/2 周五 · 上午玩海 + 采购，中午出发</p>
+    </div>
+  </div>
+  <ul class="chips" data-page-node-id="nTO9graLcO311xBWjR6m0d">
+    <li class="key" data-page-node-id="eWW2dxZ6FGCIWJxlVH6sGC">约 320 km</li>
+    <li data-page-node-id="kEatFqR7ItN4b7fiFER4lA">到家</li>
+    <li data-page-node-id="9tQrbuO9BWaBbV1ezusvLC">中途补 15 分钟电</li>
+  </ul>
+
+  <div class="route" data-page-node-id="FeCdbyboCKtRaqGgqHHegp">
+    <p class="rlabel" data-page-node-id="2nBJZN0tni8bKb0JVcQsvp">导航这样设</p>
+    <div class="rrow" data-page-node-id="AYLEDagVVqdc4h0MxbtboY"><span class="rdot" data-page-node-id="eLCoVdE890221s2HR2zGaq"></span><span class="rlab" data-page-node-id="DGhYB3Z3UqExFLOFwoOmQe">起点</span><span class="rtx" data-page-node-id="nvSIGS2rT3XxAD8c3rOSIq">北戴河</span></div>
+    <div class="rrow" data-page-node-id="sQFW7tpqgCkHqKf0FhzwCN"><span class="rdot v" data-page-node-id="WEbFTm4j15Vq1SPQJ2VHRG"></span><span class="rlab" data-page-node-id="BJuWkBnLgePeMIxwlFCXo3">途经</span><span class="rtx" data-page-node-id="NATj55tOcamaWejGTwQPHM">鸽子窝公园 → 老虎石海上公园 → 石塘路市场</span></div>
+    <div class="rrow" data-page-node-id="EgHyefZ2wBf2i2U6oS0pz1"><span class="rdot e" data-page-node-id="fVtiUnHoW2v17zefBwV8Rs"></span><span class="rlab" data-page-node-id="EzfuQFcWjHBnzWqDv1kTed">终点</span><span class="rtx" data-page-node-id="DkkTIuOMecWhAwd3vC9JS3">八角北里（家）</span></div>
+    <p class="rwarn" data-page-node-id="MppDdHcaFEybGJ51lYK0b3">回程在「迁安服务区」或「玉田服务区」补 15 分钟。</p>
+  </div>
+
+  <ol class="tl" data-page-node-id="aC4IKbSLxhatOdCNFCAhaI">
+    <li data-page-node-id="FFQ4o9uGTMJ5EAkOV7T3DW"><span class="tm" data-page-node-id="Fj1X5SCiUdmhzaxi4N98QC">07:30</span><span class="tdot" data-page-node-id="FnX4xs1LBh01PDNajIVEoI"><i data-page-node-id="HYXt4XR1WNYdm7CZnHtA22"></i></span><span class="tx" data-page-node-id="mQFGksCet9NzCCHFpGG9Ot"><b data-page-node-id="PG8eD3eyD3Ctp0zWwOiXRY">鸽子窝公园看日出</b>（自愿，10/2 秦皇岛日出约 6:10，提前 20 分钟到；<b data-page-node-id="oKJ1tfxbwX8zP0oARDmmgu">早 6 点前入园免票</b>，白天约 25 元/人，带无盐面包喂海鸥孩子会很兴奋）。08:30 早饭。</span></li>
+    <li data-page-node-id="qrw1IbrERRA3cLkxOzAqao"><span class="tm" data-page-node-id="sgo8hcqRYB3tCMOJlnKfKY">09:00</span><span class="tdot" data-page-node-id="caGL4rF5zmGFMfY8adaNcq"><i data-page-node-id="kxwem1poHfvB7fs54sQlNV"></i></span><span class="tx" data-page-node-id="Woanmdkj0Vl2lelLCf2eBH"><b data-page-node-id="4586bpJNAG3xB6BgCY61f3">中海滩 / 老虎石海上公园玩沙</b>（免费，沙滩平缓，5 岁半的孩子能站着玩水，带好小桶、铲子、洞洞鞋）。</span></li>
+    <li data-page-node-id="uUYh9AAZablniR6Z49YJmI"><span class="tm" data-page-node-id="lWbxbCGYrzbzwEAEPbw0Pw">10:30</span><span class="tdot" data-page-node-id="vlfADRM80td6EHR5ifC7S7"><i data-page-node-id="cZsLe4Aqv3NAzCx9dc7SQ7"></i></span><span class="tx" data-page-node-id="WMEnLWXQz8HfmQKTEtu8Yw"><b data-page-node-id="aeImEVfzu77jUEUkvDWTFl">石塘路市场采购海货带回家</b>（早上去货最新鲜，买活的皮皮虾、螃蟹，让店家打氧打包）。11:30 午饭（海鲜）。</span></li>
+    <li data-page-node-id="lHUjkz2dclUnrKtfTScn22"><span class="tm" data-page-node-id="Bbl5kjs6LHFnlVC5p4WRAE">12:30</span><span class="tdot" data-page-node-id="XU6I5lHvHtphXrtgbWWF5H"><i data-page-node-id="vRtTMvJfGpz48Prvrl0EZX"></i></span><span class="tx" data-page-node-id="ehOVsMXz3nHsamPcI0jrRK"><b data-page-node-id="BPRv7AEp5fTU96jCrxTHNW">出发回北京</b>（约 310 km，京哈高速免费，中午前上路避开下午）。</span></li>
+    <li data-page-node-id="YqvUHJpdQeqxFYL1cGbPa8"><span class="tm wide" data-page-node-id="xkKvPgFdgn66CA7lHsmi69">途中</span><span class="tdot" data-page-node-id="GriOVmOL7vOUqRhlija5aJ"><i data-page-node-id="xQBuNY5P16sidLapWZ0jeb"></i></span><span class="tx" data-page-node-id="aBSwColWR2n8aFsR146BY5">在<b data-page-node-id="ix3cB6cdVdbAU572syDcw3">迁安或玉田服务区补 15 分钟电</b> —— 这段 310 km 全程高速，按保守续航 280 km 算余量不到 10%，不值得赌，正好让孩子下车活动一下。</span></li>
+    <li data-page-node-id="4Reuvq3P9GSfK3BHrd5byE"><span class="tm" data-page-node-id="ANtJ6lg7hP8hpWwDq6falp">16:30</span><span class="tdot" data-page-node-id="Pf4U3kNvNTbWUjWLjnUXpS"><i data-page-node-id="IPnAnu5Dxc017NG3b1LTKd"></i></span><span class="tx" data-page-node-id="FZEZpAYuxFfvXL3A6fA9Cd"><b data-page-node-id="OU8QFmRlt4NXgRZ6jTOQbH">到家。</b></span></li>
+  </ol>
+
+  <div class="cl tip" data-page-node-id="PncMbgd6WjXdKeu2f5nfOx"><span class="k" data-page-node-id="VVhvsiAx8L6JOPQI1NHQoA">返程</span><div class="b" data-page-node-id="yO8DfHBYNeU1TYprmd322r">10/2 返程高峰在 10/6–10/7，这天进京方向基本不堵，但建议 <b data-page-node-id="pwZXQZCFnUrQRvXiV1au13">12:30 前上路</b>；10/1–10/2 高速免费，收费口可能排队，走 ETC 通道更快。10/3–10/7 还有 5 天在家缓冲，不用赶。</div></div>
+</section>
+
+<!-- 总结 -->
+<section class="end" data-page-node-id="O1jDPX5tgp5tEduaGaAVcf">
+  <h2 data-page-node-id="xhjCkZ5kI99FaXei3voDm0">全程必须充满的 6 个点</h2>
+  <p class="hint" data-page-node-id="FD6NrX8qxJUo3DG06hh0ip">记这一句就够，其余都是「想补就补」。</p>
+  <ol class="steps" data-page-node-id="Dnjf4c2w2eUBPgXCXNsd2p">
+    <li data-page-node-id="Pvnsqkb6TtAYf7cv8z2ipK"><div class="st" data-page-node-id="ECLRZ7DvfECirsdXGU9Wio"><b data-page-node-id="f53opiJDGaQMBHV3eRqDvU">围场服务区</b><span data-page-node-id="EO0zEUFv7BwppWZEPr4fA8">D1 · 下高速前最后一个</span></div></li>
+    <li data-page-node-id="yinizJL8pKGqe2u4bxngeS"><div class="st" data-page-node-id="cyBPXCJ0rD2tg5ZzShrDFE"><b data-page-node-id="g1cznskBAk0MuS01EkE7HB">乌兰布统景区里</b><span data-page-node-id="ztvSpYbJDhPHw3OjA69f4x">D1 晚 · 郭二子 / 富贵园</span></div></li>
+    <li data-page-node-id="lffjKkE8GuL9yUMnGNro4H"><div class="st" data-page-node-id="HKR4zCULyL6DMz9a0A7qhd"><b data-page-node-id="ASdfR5E6vrwEmLikEHEydW">经棚镇</b><span data-page-node-id="Jl9EYGB30UHDvaelZZDTH0">D2 晚 · 国家电网解放路站</span></div></li>
+    <li data-page-node-id="AFnw56r5qnhlIxtpqLp5Ae"><div class="st" data-page-node-id="itC2RDFyAUQFTgLhgYxdHx"><b data-page-node-id="zISNC8R98oid0XIrXc1WiH">达来诺日服务区</b><span data-page-node-id="T49bnVCseRXjWhsAW9zAgT">D3 · G303 国道旁</span></div></li>
+    <li data-page-node-id="BAQVWr3ZiMBfuVBPjXGhcl"><div class="st" data-page-node-id="hBSJkAGo4wpAeMl394DND6"><b data-page-node-id="RpFsDFOfBC9NewlGplQ7pG">热水塘镇</b><span data-page-node-id="KRM6ykQhccYczLMTFrj9Kl">D4 晚 · 蔚来站，只能充到 95%</span></div></li>
+    <li data-page-node-id="9WgzbOzAS0kFYY0LjtAJgm"><div class="st" data-page-node-id="sr2xOb6dM8msdDtHU02fVg"><b data-page-node-id="J84Bl18gpJVVRoKAyBDkyR">赤峰市</b><span data-page-node-id="kdTsRdJEsuilH3Eq9vIABx">D5 中午 · 开迈斯 / 国网</span></div></li>
+  </ol>
+
+  <h2 data-page-node-id="pEyoPksneLLuGCZP40ercQ">三条铁律</h2>
+  <p class="hint" data-page-node-id="BqSG6o5TGGAPPbuCvsdpmg">电车跑草原，靠的是这三点。</p>
+  <ol class="rules" data-page-node-id="VElXQU6ZNiluxptn9tixHP">
+    <li data-page-node-id="B7ID483xfuo0YVKmDsV0G0"><div class="rt" data-page-node-id="DX6wThYv6RIiX2SaSYVXQn">草原上「地图有桩、现场是坏的」是常事，<b data-page-node-id="CBUuF1XpJZyo2O6indmVpy">每次订房都打电话确认桩能用</b>。</div></li>
+    <li data-page-node-id="VbmQOxSfNhb2O5vw36Wgl4"><div class="rt" data-page-node-id="vYzGtQaRL0zWPNcqrPfsvA">随车带一根 <b data-page-node-id="4WyAXnavj5lGwlHlLMXBX3">30 米延长线 + 家用插头</b>，民宿接 220V 一小时能补约 8 km，这是当地电车车主的常规做法。</div></li>
+    <li data-page-node-id="5Jt6c5BeTONvBFujRUWKrJ"><div class="rt" data-page-node-id="DFDEUdcfuS01LTkmNlbETL">手机里装好 5 个 App：国网「e 充电」、蔚来「加电」、「蒙马充电」、「云快充」、高德地图（前四个找不到桩时用高德兜底）。</div></li>
+  </ol>
+</section>
+
+<p class="foot" data-page-node-id="PzLr6xnSU2flhWqDw1tIwu"><b data-page-node-id="HxRRe3dWl4nBLhyDMmNUKQ">9/26 – 10/2 · 7 天 · 约 2160 公里 · 环线不走回头路</b><br data-page-node-id="upv29QxVlIBozJNGfHlUAh">每天出发前看一眼当天的「导航这样设」和红色提示。</p>
+
+</div>
+</body>
+</html>

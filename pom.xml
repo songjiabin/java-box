@@ -16,6 +16,7 @@
         <module>jdbc</module>
         <module>druid</module>
         <module>sptring-boot-my-batis</module>
+        <module>spring-security</module>
     </modules>
 
     <properties>
