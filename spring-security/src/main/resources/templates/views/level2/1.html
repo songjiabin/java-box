@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2 · 数据概览</title>
+    <style>
+        /* Level 2 页面使用蓝色强调色，表达登录用户可访问的业务区域。 */
+        :root { --bg: #f4f7fb; --panel: #fff; --text: #172033; --muted: #68748a; --line: #dbe3ef; --accent: #2563a8; --soft: #e8f1fb; }
+        * { box-sizing: border-box; } body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; }
+        .shell { width: min(1120px, calc(100% - 40px)); margin: auto; padding: 28px 0 48px; } header { display: flex; justify-content: space-between; margin-bottom: 28px; } .brand { font-weight: 800; text-decoration: none; letter-spacing: .02em; } .back { color: var(--muted); text-decoration: none; font-size: 14px; }
+        .hero { padding: 34px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; margin-bottom: 18px; } .eyebrow { margin: 0 0 10px; color: var(--accent); font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; } h1 { margin: 0 0 10px; font-size: 36px; } .hero p { margin: 0; color: var(--muted); line-height: 1.7; } .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 18px; } .stat, .module { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; } .stat { padding: 22px; } .stat strong { display: block; color: var(--accent); font-size: 30px; } .stat span { color: var(--muted); font-size: 14px; }
+        .modules { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; } .module { padding: 24px; } .module h2 { margin: 0 0 8px; font-size: 19px; } .module p { margin: 0 0 18px; color: var(--muted); line-height: 1.7; } .link { color: var(--accent); font-weight: 700; text-decoration: none; } .link:hover { text-decoration: underline; }
+        @media (max-width: 700px) { .shell { width: min(100% - 28px, 560px); } .hero { padding: 26px; } .stats, .modules { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body><main class="shell"><header><a class="brand" href="/">SECURITY CONSOLE</a><a class="back" href="/">返回首页</a></header><section class="hero"><p class="eyebrow">Access level 02</p><h1>数据概览</h1><p>登录用户可访问的业务数据区域，用于展示需要身份认证的统计和协作功能。</p></section><section class="stats"><div class="stat"><strong>24</strong><span>本月任务</span></div><div class="stat"><strong>86%</strong><span>完成率</span></div><div class="stat"><strong>12</strong><span>协作成员</span></div></section><section class="modules"><article class="module"><h2>工作台</h2><p>集中查看当前任务、待办事项和最近活动。</p><a class="link" href="/level2/1">打开工作台 →</a></article><article class="module"><h2>团队协作</h2><p>查看团队成员与共享项目的最新进展。</p><a class="link" href="/level2/2">进入协作区 →</a></article></section></main></body>
+</html>

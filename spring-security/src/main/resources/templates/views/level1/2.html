@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 1 · 推荐内容</title>
+    <style>
+        /* Level 1 页面使用绿色强调色，表达基础访问区域。 */
+        :root { --bg: #f3f7f4; --panel: #fff; --text: #17221b; --muted: #6b776e; --line: #dce7df; --accent: #23834b; --soft: #e7f5eb; }
+        * { box-sizing: border-box; } body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; }
+        .shell { width: min(1120px, calc(100% - 40px)); margin: auto; padding: 28px 0 48px; } header { display: flex; justify-content: space-between; margin-bottom: 28px; }
+        a { color: inherit; } .brand { font-weight: 800; text-decoration: none; letter-spacing: .02em; } .back { color: var(--muted); text-decoration: none; font-size: 14px; }
+        .heading { padding: 32px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; margin-bottom: 18px; } .eyebrow { margin: 0 0 10px; color: var(--accent); font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; } h1 { margin: 0 0 10px; font-size: 36px; } .heading p { margin: 0; color: var(--muted); line-height: 1.7; }
+        .list { display: grid; gap: 12px; } .row { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 24px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; } .row h2 { margin: 0 0 6px; font-size: 18px; } .row p { margin: 0; color: var(--muted); } .link { flex: 0 0 auto; color: var(--accent); font-weight: 700; text-decoration: none; } .link:hover { text-decoration: underline; }
+        @media (max-width: 600px) { .shell { width: min(100% - 28px, 560px); } .heading { padding: 26px; } .row { display: block; } .link { display: inline-block; margin-top: 14px; } }
+    </style>
+</head>
+<body><main class="shell"><header><a class="brand" href="/">SECURITY CONSOLE</a><a class="back" href="/level1/1">返回文章中心</a></header><section class="heading"><p class="eyebrow">Level 1 / Recommended</p><h1>推荐内容</h1><p>为基础访问用户整理的学习内容，帮助快速找到适合当前阶段的主题。</p></section><section class="list"><article class="row"><div><h2>Spring MVC 请求流程</h2><p>从 DispatcherServlet 到视图解析器的完整链路。</p></div><a class="link" href="/level1/1">阅读文章 →</a></article><article class="row"><div><h2>认识认证与授权</h2><p>理解登录身份和资源访问权限之间的区别。</p></div><a class="link" href="/level1/2">查看详情 →</a></article><article class="row"><div><h2>Maven 多模块项目</h2><p>掌握父子模块之间的依赖与构建关系。</p></div><a class="link" href="/level1/3">查看详情 →</a></article></section></main></body>
+</html>

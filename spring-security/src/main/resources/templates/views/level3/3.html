@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 3 · 安全审计</title>
+    <style>
+        /* Level 3 页面使用橙色强调色，表达管理员专属操作区域。 */
+        :root { --bg: #faf7f2; --panel: #fff; --text: #292117; --muted: #776d60; --line: #eadfd1; --accent: #b45309; --soft: #fff2dc; --danger: #b42318; }
+        * { box-sizing: border-box; } body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; }
+        .shell { width: min(1120px, calc(100% - 40px)); margin: auto; padding: 28px 0 48px; } header { display: flex; justify-content: space-between; margin-bottom: 28px; } .brand { font-weight: 800; text-decoration: none; letter-spacing: .02em; } .back { color: var(--muted); text-decoration: none; font-size: 14px; }
+        .panel { padding: 32px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; } .eyebrow { margin: 0 0 10px; color: var(--accent); font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; } h1 { margin: 0 0 10px; font-size: 36px; } .lead { margin: 0 0 24px; color: var(--muted); line-height: 1.7; }
+        .events { display: grid; gap: 12px; } .event { display: grid; grid-template-columns: 150px 1fr auto; gap: 18px; align-items: center; padding: 18px; border: 1px solid var(--line); border-radius: 8px; } time, .ip { color: var(--muted); font-size: 14px; } .event strong { font-size: 15px; } .result { color: var(--accent); font-size: 13px; font-weight: 800; } .warning { color: var(--danger); }
+        @media (max-width: 650px) { .shell { width: min(100% - 28px, 560px); } .panel { padding: 26px; } .event { grid-template-columns: 1fr; gap: 7px; } }
+    </style>
+</head>
+<body><main class="shell"><header><a class="brand" href="/">SECURITY CONSOLE</a><a class="back" href="/level3/1">返回管理控制台</a></header><section class="panel"><p class="eyebrow">Level 3 / Security</p><h1>安全审计</h1><p class="lead">查看近期认证和权限事件，及时发现异常访问并保护系统资源。</p><section class="events"><article class="event"><time>今天 10:02</time><strong>管理员登录成功 <span class="ip">· 192.168.1.24</span></strong><span class="result">正常</span></article><article class="event"><time>今天 08:41</time><strong>权限策略读取 <span class="ip">· 192.168.1.24</span></strong><span class="result">正常</span></article><article class="event"><time>昨天 23:16</time><strong>登录尝试失败 <span class="ip">· 10.0.0.18</span></strong><span class="result warning">需关注</span></article></section></section></main></body>
+</html>

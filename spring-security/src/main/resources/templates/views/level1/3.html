@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 1 · 阅读记录</title>
+    <style>
+        /* Level 1 页面使用绿色强调色，表达基础访问区域。 */
+        :root { --bg: #f3f7f4; --panel: #fff; --text: #17221b; --muted: #6b776e; --line: #dce7df; --accent: #23834b; --soft: #e7f5eb; }
+        * { box-sizing: border-box; } body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; }
+        .shell { width: min(1120px, calc(100% - 40px)); margin: auto; padding: 28px 0 48px; } header { display: flex; justify-content: space-between; margin-bottom: 28px; } .brand { color: var(--text); font-weight: 800; text-decoration: none; letter-spacing: .02em; } .back { color: var(--muted); font-size: 14px; text-decoration: none; }
+        .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 32px; } .eyebrow { margin: 0 0 10px; color: var(--accent); font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; } h1 { margin: 0 0 10px; font-size: 36px; } .lead { margin: 0 0 28px; color: var(--muted); line-height: 1.7; }
+        .progress { height: 8px; overflow: hidden; background: var(--soft); border-radius: 99px; } .progress span { display: block; width: 68%; height: 100%; background: var(--accent); border-radius: inherit; } .summary { display: flex; justify-content: space-between; margin: 10px 0 30px; color: var(--muted); font-size: 14px; }
+        .records { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; } .record { padding: 20px; background: #fbfdfb; border: 1px solid var(--line); border-radius: 8px; } .record time { color: var(--accent); font-size: 13px; font-weight: 700; } .record h2 { margin: 10px 0 8px; font-size: 18px; } .record p { margin: 0; color: var(--muted); line-height: 1.6; }
+        @media (max-width: 700px) { .shell { width: min(100% - 28px, 560px); } .panel { padding: 26px; } .records { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body><main class="shell"><header><a class="brand" href="/">SECURITY CONSOLE</a><a class="back" href="/">返回首页</a></header><section class="panel"><p class="eyebrow">Level 1 / Activity</p><h1>阅读记录</h1><p class="lead">记录最近的学习轨迹，继续完成尚未读完的内容。</p><div class="progress"><span></span></div><div class="summary"><span>本周学习进度</span><strong>68%</strong></div><div class="records"><article class="record"><time>今天 09:20</time><h2>Spring Security 入门</h2><p>已阅读至认证流程部分。</p></article><article class="record"><time>昨天 16:45</time><h2>Controller 路由设计</h2><p>已完成基础路由示例。</p></article><article class="record"><time>周一 10:12</time><h2>Thymeleaf 模板</h2><p>已了解视图解析配置。</p></article></div></section></main></body>
+</html>

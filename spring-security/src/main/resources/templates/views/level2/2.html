@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2 · 团队协作</title>
+    <style>
+        /* Level 2 页面使用蓝色强调色，表达登录用户可访问的业务区域。 */
+        :root { --bg: #f4f7fb; --panel: #fff; --text: #172033; --muted: #68748a; --line: #dbe3ef; --accent: #2563a8; --soft: #e8f1fb; }
+        * { box-sizing: border-box; } body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; }
+        .shell { width: min(1120px, calc(100% - 40px)); margin: auto; padding: 28px 0 48px; } header { display: flex; justify-content: space-between; margin-bottom: 28px; } .brand { font-weight: 800; text-decoration: none; letter-spacing: .02em; } .back { color: var(--muted); text-decoration: none; font-size: 14px; }
+        .heading { padding: 32px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; margin-bottom: 18px; } .eyebrow { margin: 0 0 10px; color: var(--accent); font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; } h1 { margin: 0 0 10px; font-size: 36px; } .heading p { margin: 0; color: var(--muted); line-height: 1.7; }
+        .members { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; } .member { padding: 22px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; } .avatar { display: grid; place-items: center; width: 44px; height: 44px; margin-bottom: 16px; border-radius: 50%; background: var(--soft); color: var(--accent); font-weight: 800; } .member h2 { margin: 0 0 6px; font-size: 18px; } .member p { margin: 0; color: var(--muted); }
+        @media (max-width: 700px) { .shell { width: min(100% - 28px, 560px); } .heading { padding: 26px; } .members { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body><main class="shell"><header><a class="brand" href="/">SECURITY CONSOLE</a><a class="back" href="/level2/1">返回数据概览</a></header><section class="heading"><p class="eyebrow">Level 2 / Collaboration</p><h1>团队协作</h1><p>这里汇总当前项目的参与成员和协作状态，只有完成登录的用户才能访问。</p></section><section class="members"><article class="member"><div class="avatar">L</div><h2>李明</h2><p>后端开发 · 在线</p></article><article class="member"><div class="avatar">W</div><h2>王芳</h2><p>产品设计 · 在线</p></article><article class="member"><div class="avatar">Z</div><h2>张伟</h2><p>测试工程 · 离开</p></article></section></main></body>
+</html>

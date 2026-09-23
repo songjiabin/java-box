@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 3 · 管理控制台</title>
+    <style>
+        /* Level 3 页面使用橙色强调色，表达管理员专属操作区域。 */
+        :root { --bg: #faf7f2; --panel: #fff; --text: #292117; --muted: #776d60; --line: #eadfd1; --accent: #b45309; --soft: #fff2dc; }
+        * { box-sizing: border-box; } body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; }
+        .shell { width: min(1120px, calc(100% - 40px)); margin: auto; padding: 28px 0 48px; } header { display: flex; justify-content: space-between; margin-bottom: 28px; } .brand { font-weight: 800; text-decoration: none; letter-spacing: .02em; } .back { color: var(--muted); text-decoration: none; font-size: 14px; }
+        .hero { display: flex; justify-content: space-between; gap: 24px; align-items: end; padding: 34px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; margin-bottom: 18px; } .eyebrow { margin: 0 0 10px; color: var(--accent); font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; } h1 { margin: 0 0 10px; font-size: 36px; } .hero p:last-child { max-width: 650px; margin: 0; color: var(--muted); line-height: 1.7; } .badge { flex: 0 0 auto; padding: 9px 12px; border: 1px solid #efc98d; border-radius: 6px; background: var(--soft); color: var(--accent); font-size: 13px; font-weight: 800; }
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; } .card { padding: 24px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; } .card h2 { margin: 0 0 10px; font-size: 19px; } .card p { min-height: 52px; margin: 0 0 18px; color: var(--muted); line-height: 1.7; } .link { color: var(--accent); font-weight: 700; text-decoration: none; } .link:hover { text-decoration: underline; }
+        @media (max-width: 700px) { .shell { width: min(100% - 28px, 560px); } .hero { display: block; padding: 26px; } .badge { display: inline-block; margin-top: 20px; } .grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body><main class="shell"><header><a class="brand" href="/">SECURITY CONSOLE</a><a class="back" href="/">返回首页</a></header><section class="hero"><div><p class="eyebrow">Access level 03</p><h1>管理控制台</h1><p>管理员专属区域，集中处理系统配置、权限策略和安全审计等高风险操作。</p></div><span class="badge">ADMIN ONLY</span></section><section class="grid"><article class="card"><h2>用户管理</h2><p>查看用户状态，维护账号和基础资料。</p><a class="link" href="/level3/1">管理用户 →</a></article><article class="card"><h2>权限策略</h2><p>配置角色范围与资源访问规则。</p><a class="link" href="/level3/2">查看策略 →</a></article><article class="card"><h2>安全审计</h2><p>检查认证事件和系统风险提醒。</p><a class="link" href="/level3/3">进入审计 →</a></article></section></main></body>
+</html>

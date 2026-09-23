@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 3 · 用户管理</title>
+    <style>
+        /* Level 3 页面使用橙色强调色，表达管理员专属操作区域。 */
+        :root { --bg: #faf7f2; --panel: #fff; --text: #292117; --muted: #776d60; --line: #eadfd1; --accent: #b45309; --soft: #fff2dc; }
+        * { box-sizing: border-box; } body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; }
+        .shell { width: min(1120px, calc(100% - 40px)); margin: auto; padding: 28px 0 48px; } header { display: flex; justify-content: space-between; margin-bottom: 28px; } .brand { font-weight: 800; text-decoration: none; letter-spacing: .02em; } .back { color: var(--muted); text-decoration: none; font-size: 14px; }
+        .heading { padding: 32px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; margin-bottom: 18px; } .eyebrow { margin: 0 0 10px; color: var(--accent); font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; } h1 { margin: 0 0 10px; font-size: 36px; } .heading p { margin: 0; color: var(--muted); line-height: 1.7; }
+        table { width: 100%; border-collapse: collapse; overflow: hidden; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; } th, td { padding: 17px 20px; border-bottom: 1px solid var(--line); text-align: left; } th { background: var(--soft); color: var(--accent); font-size: 13px; } tr:last-child td { border-bottom: 0; } td { color: var(--muted); } td strong { color: var(--text); } .status { color: var(--accent); font-size: 13px; font-weight: 700; }
+        @media (max-width: 620px) { .shell { width: min(100% - 28px, 560px); } .heading { padding: 26px; } table { display: block; overflow-x: auto; white-space: nowrap; } }
+    </style>
+</head>
+<body><main class="shell"><header><a class="brand" href="/">SECURITY CONSOLE</a><a class="back" href="/level3/1">返回管理控制台</a></header><section class="heading"><p class="eyebrow">Level 3 / Users</p><h1>用户管理</h1><p>管理员可以在这里查看账号状态和所属角色。示例数据仅用于演示页面和权限边界。</p></section><table><thead><tr><th>用户</th><th>角色</th><th>最近登录</th><th>状态</th></tr></thead><tbody><tr><td><strong>admin</strong></td><td>管理员</td><td>今天 10:02</td><td class="status">正常</td></tr><tr><td><strong>operator</strong></td><td>运营人员</td><td>今天 09:36</td><td class="status">正常</td></tr><tr><td><strong>reader</strong></td><td>普通用户</td><td>昨天 18:20</td><td class="status">正常</td></tr></tbody></table></main></body>
+</html>
