@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class User {
 
-    private int id; // id
+    private Integer id; // id
     private String userName; // 用户名
     private String nickName; // 昵称
     private String password; // 密码

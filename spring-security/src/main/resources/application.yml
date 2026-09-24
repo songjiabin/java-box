@@ -1,6 +1,6 @@
 # Spring Boot 服务监听端口，浏览器通过该端口访问页面和接口。
 server:
-  port: 8080
+  port: 8088
 
 spring:
   datasource:
@@ -9,7 +9,14 @@ spring:
     #?serverTimezone=UTC 解决时区的报错
     url: jdbc:mysql://localhost:3306/mytest?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
     driver-class-name: com.mysql.cj.jdbc.Driver
-
+  redis:
+    data:
+      # Redis 服务地址，127.0.0.1 表示当前运行应用的本机。
+      host: 127.0.0.1
+      # Redis 服务端口，默认端口为 6379。
+      port: 6379
+      # Redis 逻辑数据库编号，0 表示使用第一个逻辑数据库。
+      database: 0
 
 # MyBatis 配置，用于指定实体类别名扫描范围和 Mapper XML 文件位置。
 mybatis:
