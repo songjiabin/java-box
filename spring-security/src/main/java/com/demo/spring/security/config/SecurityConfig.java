@@ -3,6 +3,10 @@ package com.demo.spring.security.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 
@@ -11,8 +15,25 @@ public class SecurityConfig {
 
 
 
-//    @Bean
-//    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        // 推荐使用，它在每次加密时都会生成不同的盐值，且计算成本可调
+        return new BCryptPasswordEncoder();
+    }
+
+
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+
+        http
+        //关闭 csrf
+        .csrf().disable()
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .
+
+
 //        http.authorizeHttpRequests(authorize -> authorize
 //                // 首页、登录页和静态资源允许未登录访问。
 //                .requestMatchers("/", "/index", "/tologin", "/css/**", "/js/**").permitAll()
@@ -29,7 +50,7 @@ public class SecurityConfig {
 //                .permitAll());
 //
 //        return http.build();
-//
-//    }
+
+    }
 
 }
